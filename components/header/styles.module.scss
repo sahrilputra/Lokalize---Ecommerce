@@ -18,7 +18,7 @@ $bg-color : #F5F6F8;
         font-size: 16px;
 
         text-align: center;
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         position: relative;
@@ -30,7 +30,7 @@ $bg-color : #F5F6F8;
         overflow: hidden;
         overflow: hidden;
         display: flex;
-        top: 6px;
+        top: 4px;
         flex-direction: row;
     }&__left__li {
         min-width: 28px;
@@ -64,8 +64,8 @@ $bg-color : #F5F6F8;
 
     //profile
     &__profile{
-        width: 42px;
-        height: 42px;
+        width: 38px;
+        height: 38px;
         background-color: #dedede;
         border: 2px solid #000;
         border-radius: 50%;
