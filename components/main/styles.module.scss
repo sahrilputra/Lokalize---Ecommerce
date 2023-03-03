@@ -1,4 +1,5 @@
 .hero {
+    margin-top: 50px;
     padding: 10px;
     width: 100%;
     height: 100vh;
@@ -144,47 +145,167 @@
         fill: none;
         overflow: hidden;
     }
-&__circle{
+
+    &__circle {
         position: absolute;
         right: 0;
         margin: 0 auto;
     }
 }
 
-// Responsive
 
+// product card
+.product {
+    margin-top: 40px;
+    padding: 10px;
+    width: 100%;
+    max-height: max-content;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    align-self: center;
+    text-align: left;
+    position: relative;
 
-@media (max-width:756px) {
-    .hero {
-        &__container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        &__container:nth-of-type(2) {
-            order: 1;
-        }
-
-        &__container:nth-of-type(1) {
-            order: 2;
-        }
+    &__heading{
+        font-weight: 600;
+        font-size: 80px;
+        text-shadow: 10px -8px 0px rgba(45, 45, 45, 0.5);
+        line-height: 105.25%;
+        letter-spacing: 0.04rem;
+    }
+    &__absolute {
+        position: absolute;
+        left: 80px;
+        top: -60px;
+        margin: 0 auto;
+        font-size: 140px;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        display: block;
+        fill: none;
+        overflow: hidden;
     }
 
-    .content {
-        margin-top: 40px;
+    &__mainContainer {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        gap: 50px;
+        background: rgba(255, 255, 255, 0.345);
+        mix-blend-mode: normal;
+        box-shadow: -9px 4px 100px 15px rgba(0, 0, 0, 0.118);
+        padding: 20px;
+        border-radius: 58px;
+    }
 
-        &__container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        &__absolute {
-            top: 360px;
-            font-size: 80px;
-            position: absolute;
-            right: 0px;
-        }
-        h1 {
-            font-weight: 600;
-            font-size: 60px;
-            text-shadow: 10px -8px 0px rgba(45, 45, 45, 0.5);
-        }
+    &__card {
+        width: 300px;
+        height: 420px;
+        padding: 6px;
+        border-radius: 20px;
+        background-color: #ffff;
+        box-shadow: -9px 4px 100px 15px rgba(0, 0, 0, 0.118);
+    }
+    &__card__heading{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    &__display{
+        text-align: center;
+        margin: auto;
+    }
+    &__product__content{
+        text-align: center;
+    }
+    &__content__display{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }&__content__title{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }&__content__param{
+        text-align: center;
+        width: 80%;
+        align-items: center;
+        margin: auto;
+    }
+    &__content__button{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }&__content__img{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+        background-color: #ffff;
+        box-shadow: -9px 4px 100px 15px rgba(0, 0, 0, 0.118);
+        border-radius: 22px;
+    }&__content__product{
+        background-size: contain;
+        padding: 10px;
+        -ms-flex-item-align: center;
+
     }
 }
+
+    // Responsive
+
+
+    @media (max-width:756px) {
+        .hero {
+            &__container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            &__container:nth-of-type(2) {
+                order: 1;
+            }
+
+            &__container:nth-of-type(1) {
+                order: 2;
+            }
+        }
+
+        .content {
+            margin-top: 40px;
+
+            &__container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            &__absolute {
+                top: 360px;
+                font-size: 80px;
+                position: absolute;
+                right: 0px;
+            }
+
+            h1 {
+                font-weight: 600;
+                font-size: 60px;
+                text-shadow: 10px -8px 0px rgba(45, 45, 45, 0.5);
+            }
+        }
+
+        .product {
+            &__mainContainer {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            &__absolute {
+                top: 0;
+                font-size: 80px;
+                position: absolute;
+                left: 0px;
+            }
+        }
+    }
