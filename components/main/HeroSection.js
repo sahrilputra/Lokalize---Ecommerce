@@ -6,7 +6,7 @@ export const HeroSection = () => {
      <div className={styles.hero__svg}>
                 <Image
                 className={styles.hero__halfCircle}
-                src="/component/double_halfCircle.svg"
+                src="/component/double_halfcircle.svg"
                 width={60}
                 height={60}
                 alt="half cirlce"
