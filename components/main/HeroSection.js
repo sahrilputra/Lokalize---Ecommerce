@@ -30,8 +30,9 @@ export const HeroSection = () => {
               </div>
             </div>
 
-            <div className={styles.hero__imgContent}>
+            <div className={`${styles.hero__imgContent} ${styles.bounceInDown}`}>
               <Image
+              className={styles.u__bounceInDown}
               src="/img_hero.png"
               width={350}
               height={350}
