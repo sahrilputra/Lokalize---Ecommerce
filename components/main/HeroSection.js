@@ -28,12 +28,12 @@ export const HeroSection = () => {
                 </p>
                 <button className={styles.greenButton}>Mulai</button>
               </div>
-            </div>
+            </div>  
 
             <div className={`${styles.hero__imgContent} ${styles.bounceInDown}`}>
               <Image
               className={styles.u__bounceInDown}
-              src="/img_hero.png"
+              src="/component/heroAll.svg"
               width={350}
               height={350}
               alt="hero Image display"
