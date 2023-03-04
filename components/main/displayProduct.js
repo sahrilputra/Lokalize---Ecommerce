@@ -23,8 +23,8 @@ export const DisplayProduct = () => {
                     </div>
                     <div className={styles.product__card__title}>
                         <h3 className={styles.product__card__heading}>NAME</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
-                        <p>Rp. 24.000</p>
+                        <p className={styles.product__card__description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
+                        <p className={styles.product__card__money}>Rp. 24.000</p>
                     </div>
                 </div>
                 

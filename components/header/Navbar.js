@@ -7,7 +7,7 @@ export const Navbar = () => {
                 <div className={styles.nav_left}>
                     <ul className={styles.nav__left__container}>
                         <li className={styles.nav__left__li}><a href="#">Logo</a></li>
-                        <li className={styles.nav__left__li}><a href="#">Market</a></li>
+                        <li className={styles.nav__left__li}><a href="/market">Market</a></li>
                         <li className={styles.nav__left__li}><a href="#">Helo</a></li>
                     </ul>
                 </div>
