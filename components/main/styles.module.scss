@@ -155,6 +155,7 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
         position: absolute;
         right: 0;
         margin: 0 auto;
+        z-index: -1;
     }
 }
 

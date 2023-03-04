@@ -1,0 +1,27 @@
+.banner{
+    width: 80%;
+    height: max-content;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+.inputSearch{
+    width: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    border: 1px solid #dedede;
+}
+.submitForm{
+    background-color: greenyellow;
+}
+
+.breadcrumbs{
+    font-family:'Poppins', sans-serif;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    height: 80px;
+}

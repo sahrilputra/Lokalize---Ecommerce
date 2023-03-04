@@ -1,10 +1,12 @@
 import { Navbar } from "@/components/header/Navbar"
-
-import { marketMain } from "@/components/market"
+import { FooterElement } from "@/components/footer/footer"
+import { MarketMain } from "@/components/market"
 const Market = () => {
   return (
     <>
-    <marketMain />
+    <Navbar />
+    <MarketMain />
+    <FooterElement />
     </>
   )
 }

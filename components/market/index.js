@@ -1,10 +1,12 @@
-import React from 'react'
+import { BreadCrumbsElement } from './breadCumbs'
 import { Banner } from './banner'
-export const marketMain = () => {
+import { SearchBar } from './searchBar'
+export const MarketMain = () => {
   return (
     <>
-    <h1>TEASAS</h1>
+    <BreadCrumbsElement />
     <Banner />
+    <SearchBar />
     </>
   )
 }
