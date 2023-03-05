@@ -1,4 +1,5 @@
 import styles from '../header/styles.module.scss';
+import Link from 'next/link';
 import { BiHeart, BiShoppingBag } from "react-icons/bi";
 export const Navbar = () => {
     return (
@@ -6,9 +7,9 @@ export const Navbar = () => {
             <div className={styles.nav__container}>
                 <div className={styles.nav_left}>
                     <ul className={styles.nav__left__container}>
-                        <li className={styles.nav__left__li}><a href="#">Logo</a></li>
-                        <li className={styles.nav__left__li}><a href="/market">Market</a></li>
-                        <li className={styles.nav__left__li}><a href="#">Helo</a></li>
+                        
+                        <li className={styles.nav__left__li}><Link href="/">Home</Link></li>
+                        <li className={styles.nav__left__li}><Link href="/market">Market</Link></li>
                     </ul>
                 </div>
                 <div className={styles.nav__right}>
