@@ -15,6 +15,8 @@
     "eslint-config-next": "13.1.6",
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.4.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.0",
     "next": "13.1.6",
     "next-auth": "^4.20.1",
     "react": "18.2.0",
@@ -22,8 +24,15 @@
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "autoprefixer": "^10.4.13",
+    "next-redux-wrapper": "^8.1.0",
     "postcss": "^8.4.21",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2",
     "sass": "^1.58.0",
     "tailwindcss": "^3.2.7"
   }
