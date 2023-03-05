@@ -1,12 +1,11 @@
+
 .banner {
     width: 80%;
     height: max-content;
     margin: auto;
     margin-top: 40px;
-
-    img {
-        cursor: pointer;
-    }
+    position: relative;
+    top: 30px;
 }
 
 .inputSearch {
@@ -38,8 +37,8 @@
 
     &__container {
         display: grid;
-        grid-template-columns: 0.8fr 1.8fr;
-        gap: 20px;
+        grid-template-columns: 0.6fr 1.8fr;
+        gap: 4px;
     }
 
     &__menuSection {
@@ -56,29 +55,31 @@
     }
 
     &__item {
-        cursor: pointer;
         margin-top: 40px;
         width: 60%;
+        cursor: pointer;
     }
 
     &__card {
-
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
-
+        position: relative;
         &__image {
+            max-width: 156px;
+            max-height: 120px;
             padding: 12px;
+            margin: auto;
         }
 
         &__item {
             position: relative;
-            cursor: pointer;
             width: 200px;
             background: #fff;
             border-radius: 22px;
+            min-height: max-content;
             max-height: max-content;
             padding: 10px;
             margin: 10px;
@@ -87,9 +88,12 @@
         }
 
         &__title {
-            margin-bottom: 6px;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 16px;
+            margin-top: 16px;
+            min-width: 44px;
+            max-width: max-content;
+            cursor: pointer;
         }
 
         &__param {
@@ -107,12 +111,16 @@
             text-align: right;
             margin-top: 20px;
             position: relative;
-
+           
+        }
+        &__text{
+            height: 180px;
         }
     }
 }
 
 .cartIcon{
+    cursor: pointer;
     position: absolute;
     left: 10px;
     height: 22px;
@@ -121,6 +129,7 @@
 }
 
 .heartIcon {
+    cursor: pointer;
     height: 22px;
     width: 22px;
     text-align: right;
@@ -139,7 +148,7 @@
     }
 
     .banner {
-        width: 100%;
+        top: 30px;
     }
 
     .market {

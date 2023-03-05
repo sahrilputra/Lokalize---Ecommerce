@@ -1,5 +1,6 @@
 import styles from '../main/styles.module.scss';
 import Image from 'next/image'
+import Link from 'next/link';
 export const DisplayProduct = () => {
     return (
         <div className={styles.product}>
@@ -34,7 +35,7 @@ export const DisplayProduct = () => {
                     <h3 className={styles.product__content__title}>Product Kami</h3>
                     <p className={styles.product__content__param}>Jelajahi lebih dalam produk unggulan kami di lokalize</p>
                     <div className={styles.product__content__button}>
-                        <button className={styles.greenButton} placehoder="explore">explore</button>
+                        <button className={styles.greenButton} placehoder="explore"><Link href="/market">Explore</Link></button>
                     </div>
                     <div className={styles.product__content__display}>
                         <div className={styles.product__content__img}>

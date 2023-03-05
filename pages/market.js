@@ -4,7 +4,6 @@ import { MarketMain } from "@/components/market"
 const Market = () => {
   return (
     <>
-    <Navbar />
     <MarketMain />
     <FooterElement />
     </>
