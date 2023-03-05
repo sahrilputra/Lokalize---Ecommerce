@@ -8,16 +8,13 @@ export const BreadCrumbsElement = () => {
             <div className={styles.breadcrumbs}>
                 <Breadcrumb aria-label="Default breadcrumb example">
                     <Breadcrumb.Item
-                        href="#"
+                        href="/"
                         icon={HiHome}
                     >
                         Home
                     </Breadcrumb.Item>
-                    <Breadcrumb.Item href="#">
-                        Projects
-                    </Breadcrumb.Item>
                     <Breadcrumb.Item>
-                        Flowbite React
+                        Market
                     </Breadcrumb.Item>
                 </Breadcrumb>
             </div>

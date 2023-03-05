@@ -11,10 +11,14 @@ export const Banner = () => {
                         <Image
                             src="/banner/banner_ads.png"
                             alt="banner"
+                            width={220}
+                            height={250}
                         />
                         <Image
                             src="/banner/banner_ads.png"
                             alt="banner"
+                            width={320}
+                            height={250}
                         />
                     </Carousel>
                 </div>
