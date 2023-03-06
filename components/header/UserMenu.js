@@ -10,16 +10,17 @@ export const UserMenu = ({ session }) => {
         <>
             <div className={styles.menu}>
                 <div className={styles.menu__contaienr}>
-                    {loggedIn ? (
+                    {session ? (
                         <>
                             <div className={styles.menu__profile}>
-                                <Image
+                            <img className={styles.profileMenus} src={session.user.image} alt="user icon" />
+                                {/* <Image
                                     src="/img_hero.png"
                                     className={styles.avatar}
                                     alt='avatar'
                                     width={80}
-                                    height={80} />
-                            </div><h1>Hello Lokalize,</h1>
+                                    height={80} /> */}
+                            </div><h1>Hello <span>{session.user.name}</span>,</h1>
                         </>
                     ) : (
                         <>
@@ -51,12 +52,11 @@ export const UserMenu = ({ session }) => {
                 </ul>
 
                 <div className={styles.btn}>
-                    {loggedIn ? (
+                    {session ? (
                          <button className={styles.btn__secondary}>Sign out</button>
                     ):(
                         <>
-                        <button className={styles.btn__primary}>Sign in</button>
-                        <button className={styles.btn__secondary}>Register</button>
+                        <button className={styles.btn__secondary}> <Link href="/signin">Register</Link></button>
                         </>
                     )}
                   

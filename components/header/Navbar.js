@@ -1,13 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from '../header/styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import { UserMenu } from './UserMenu';
 import { useState } from 'react';
 import { BiHeart, BiShoppingBag } from "react-icons/bi";
+import { useSession } from 'next-auth/react';
 
 
 export const Navbar = () => {
-    const [loggedIn, setLogged] = useState(true);
+  
+    const { data: session } = useSession();
     const [visible, setVisible] = useState(false);
     const [showing, setShowing] = useState(false);
 
@@ -30,12 +33,12 @@ export const Navbar = () => {
                 </div>
                 <div className={styles.nav__right}>
                     <ul className={styles.nav__right__container}>
-                        <li className={styles.nav__right__li} tabIndex={0}>
+                        <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
                             <Link href="/">
                                 <BiHeart />
                             </Link>
                         </li>
-                        <li className={styles.nav__right__li} tabIndex={0}>
+                        <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
                             <Link href="/">
                                 <BiShoppingBag />
                             </Link>
@@ -44,15 +47,10 @@ export const Navbar = () => {
                         <li className={`${styles.nav__right__li} ${styles.nav__profile}`} tabIndex={0}
                             onClick={toggleMenu}
                         >
-                            {loggedIn ? (
+                            {session ? (
                                 <span className={styles.li}>
                                     <div className={styles.avatarIcon}>
-                                        <Image
-                                            src="/img_hero.png"
-                                            alt="avatar icon"
-                                            width={50}
-                                            height={50}
-                                        />
+                                        <img className={styles.profileImg} src={session.user.image} alt="user icon" />
                                     </div>
                                 </span>
                             ) : (
@@ -70,7 +68,7 @@ export const Navbar = () => {
                             }
                         </li>
                         {
-                            visible && <UserMenu />
+                            visible && <UserMenu session={session}/>
                         }
                     </ul>
                 </div>

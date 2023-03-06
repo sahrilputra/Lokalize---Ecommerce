@@ -53,6 +53,7 @@ $bg-color : #F5F6F8;
         align-items: center;
         display: flex;
         flex-direction: row;
+        font-weight: 600;
 
         li {
             min-width: 28px;
@@ -60,34 +61,47 @@ $bg-color : #F5F6F8;
             gap: 10px;
             padding: 4px;
             margin: 10px;
-
+            font-weight: 600;
             cursor: pointer;
 
-            :nth-child(1) {
-                width: 22px;
-                height: 22px;
-                font-weight: 400;
+            :nth-last-child {
+                width: 30px;
+                height: 30px;
             }
         }
     }
 
+    .icon {
+        svg {
+            width: 22px;
+            height: 22px;
+            font-weight: 600;
+        }
+
+    }
+
     //profile
     &__profile {
-        width: 38px;
-        height: 38px;
-        border: 2px solid #2d2d2d;
-        border-radius: 50%;
+        width: 50px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        &avatarIcon{
-            width: auto;
-            background-size: cover;
-            margin: auto;
+
+        .profileImg {
+            padding: 2px;
+            background-size: auto;
+            outline: 2px solid #2d2d2d;
+            border-radius: 50%;
         }
     }
-
 }
+
+.profileMenus{
+    outline: 2px solid #2d2d2d;
+    border-radius: 50%;
+}
+
 
 
 // user menu's 
@@ -105,6 +119,7 @@ $bg-color : #F5F6F8;
     padding: 10px;
     padding-top: 12px;
     margin: auto;
+
     &__profile {
         width: 80px;
         height: 80px;
@@ -130,7 +145,8 @@ $bg-color : #F5F6F8;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        :hover{
+
+        :hover {
             background: #eeee;
         }
     }
@@ -175,6 +191,7 @@ $bg-color : #F5F6F8;
         border-radius: 4px;
         padding: 4px;
     }
+
     &__primary {
         background: #ffff;
         width: 80px;
@@ -191,6 +208,6 @@ $bg-color : #F5F6F8;
 @media (max-width:900px) {
 
     .menu {
-      right: 0;
+        right: 0;
     }
 }

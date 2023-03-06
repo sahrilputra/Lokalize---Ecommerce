@@ -6,8 +6,10 @@ import { HeaderMenu } from '@/components/header'
 import { Mainsection } from '@/components/main/mainsection'
 import { FooterElement } from '@/components/footer/footer'
 const inter = Inter({ subsets: ['latin'] })
-
+import { useSession, signIn, signOut } from 'next-auth/react'
 export default function Home() {
+  const { data: session } = useSession();
+  console.log(session);
   return (
     <>
     <HeaderMenu/>

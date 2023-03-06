@@ -1,0 +1,127 @@
+.container {
+    position: relative;
+    margin-top: 22px;
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+
+    h1 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 10px;
+        margin: 4px;
+    }
+
+    &__login {}
+
+    &__form {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    svg {
+        font-size: 22px;
+    }
+
+    input {
+        margin: 4px;
+        border-radius: 15px;
+        border: 3px solid #DEDEDE;
+        width: 260px;
+    }
+
+    @media (max-width: 608px) {
+        top: 80px;
+    }
+}
+
+.forgot {
+    height: 44px;
+    padding: 4px;
+    margin: 3px;
+    color: #4da5e4;
+
+    :hover {
+        padding: 4px;
+        border-bottom: 2px solid #dedede;
+    }
+}
+
+.button__primary {
+    margin-top: 20px;
+    width: 120px;
+    height: 48px;
+    border-radius: 12px;
+    color: #fff;
+    background: rgb(80, 235, 178);
+    background: linear-gradient(125deg, rgba(80, 235, 178, 1) 23%, rgba(66, 80, 231, 1) 100%);
+}
+
+
+.providers {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 260px;
+    padding: 10px;
+    background-color: #fff;
+    outline: 2px solid #dedede;
+    border-radius: 14px;
+    cursor: pointer;
+
+    :focus {
+        border: 2px solid #2d2d2d;
+    }
+
+    Image {
+        background-size: contain;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.component {
+    height: auto;
+    width: auto;
+    position: absolute;
+    overflow: hidden;
+    &__large {
+        height: auto;
+        width: auto;
+        position: relative;
+        overflow: hidden;
+        top: 50px;
+        left: -150px;
+        Image {
+            position: absolute;
+            top: 20px;
+            left: -90px;
+            overflow: hidden;
+        }
+    }&__medium{
+        position: relative;
+        overflow: hidden;
+        top: -616px;
+        right: 138px;
+    }
+}
+.mediumSvg{
+   
+}
