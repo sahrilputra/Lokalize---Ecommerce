@@ -7,7 +7,7 @@ import { BiHeart, BiShoppingBag } from "react-icons/bi";
 
 
 export const Navbar = () => {
-    const [loggedIn, setLogged] = useState(false);
+    const [loggedIn, setLogged] = useState(true);
     const [visible, setVisible] = useState(false);
     const [showing, setShowing] = useState(false);
 
@@ -16,7 +16,7 @@ export const Navbar = () => {
         setShowing(true);
         setTimeout(() => {
             setShowing(false);
-        }, 3000); // tampilkan selama 3 detik sebelum disembunyikan
+        }, 3000); 
     }
     return (
         <nav className={styles.nav}>

@@ -5,7 +5,7 @@ import { signOut, signIn } from 'next-auth/react'
 import { useState } from 'react';
 
 export const UserMenu = ({ session }) => {
-    const [loggedIn, setLogged] = useState(false);
+    const [loggedIn, setLogged] = useState(true);
     return (
         <>
             <div className={styles.menu}>
@@ -19,7 +19,7 @@ export const UserMenu = ({ session }) => {
                                     alt='avatar'
                                     width={80}
                                     height={80} />
-                            </div><h1>Hello Sahril,</h1>
+                            </div><h1>Hello Lokalize,</h1>
                         </>
                     ) : (
                         <>

@@ -95,7 +95,7 @@ $bg-color : #F5F6F8;
 .menu {
     filter: drop-shadow(-17px 33px 57px rgba(0, 0, 0, 0.25));
     position: absolute;
-    right: 8px;
+    right: 120px;
     background: $bg-color;
     z-index: 99 !important;
     top: 70px;
@@ -103,12 +103,12 @@ $bg-color : #F5F6F8;
     text-align: center;
     border-radius: 22px;
     padding: 10px;
-    padding-top: 8px;
+    padding-top: 12px;
     margin: auto;
     &__profile {
         width: 80px;
         height: 80px;
-        border: 5px solid #000;
+
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -188,9 +188,9 @@ $bg-color : #F5F6F8;
     }
 }
 
-@media (min-width:1080px) {
+@media (max-width:900px) {
 
     .menu {
-       margin: auto;
+      right: 0;
     }
 }
