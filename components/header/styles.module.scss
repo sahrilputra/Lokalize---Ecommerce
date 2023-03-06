@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 $bg-color : #F5F6F8;
+
 .nav {
     background-color: $bg-color;
     width: 100%;
@@ -13,9 +14,9 @@ $bg-color : #F5F6F8;
     z-index: 1 !important;
     position: fixed;
     top: 0;
-    
+
     &__container {
-        font-family:'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 16px;
         position: fixed;
@@ -27,14 +28,18 @@ $bg-color : #F5F6F8;
         justify-items: center;
         margin: 0 30px 0 30px;
         // content here
-    }&__left__container {
+    }
+
+    &__left__container {
         position: relative;
         overflow: hidden;
         overflow: hidden;
         display: flex;
         top: 4px;
         flex-direction: row;
-    }&__left__li {
+    }
+
+    &__left__li {
         min-width: 28px;
         gap: 10px;
         padding: 4px;
@@ -48,7 +53,8 @@ $bg-color : #F5F6F8;
         align-items: center;
         display: flex;
         flex-direction: row;
-        li{
+
+        li {
             min-width: 28px;
             min-height: 28px;
             gap: 10px;
@@ -56,7 +62,8 @@ $bg-color : #F5F6F8;
             margin: 10px;
 
             cursor: pointer;
-            :nth-child(1){
+
+            :nth-child(1) {
                 width: 22px;
                 height: 22px;
                 font-weight: 400;
@@ -65,12 +72,125 @@ $bg-color : #F5F6F8;
     }
 
     //profile
-    &__profile{
+    &__profile {
         width: 38px;
         height: 38px;
-        background-color: #dedede;
-        border: 2px solid #000;
+        border: 2px solid #2d2d2d;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &avatarIcon{
+            width: auto;
+            background-size: cover;
+            margin: auto;
+        }
     }
 
+}
+
+
+// user menu's 
+
+.menu {
+    filter: drop-shadow(-17px 33px 57px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    right: 8px;
+    background: $bg-color;
+    z-index: 99 !important;
+    top: 70px;
+    width: 320px;
+    text-align: center;
+    border-radius: 22px;
+    padding: 10px;
+    padding-top: 8px;
+    margin: auto;
+    &__profile {
+        width: 80px;
+        height: 80px;
+        border: 5px solid #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        :hover{
+            background: #eeee;
+        }
+    }
+
+    li {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 44px;
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 1.5px solid #dedede70;
+    }
+}
+
+.avatar {
+    margin: auto;
+}
+
+// button 
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    gap: 6px;
+
+    &__secondary {
+        background: #2d2d2d;
+        width: 80px;
+        height: 44px;
+        color: #fff;
+        font-weight: 500;
+        margin: 6px;
+        background: #2D2D2D;
+        box-shadow: 0px 4px 19px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        padding: 4px;
+    }
+    &__primary {
+        background: #ffff;
+        width: 80px;
+        height: 44px;
+        color: #2d2d2d;
+        font-weight: 500;
+        margin: 6px;
+        box-shadow: 0px 4px 19px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        padding: 4px;
+    }
+}
+
+@media (min-width:1080px) {
+
+    .menu {
+       margin: auto;
+    }
 }

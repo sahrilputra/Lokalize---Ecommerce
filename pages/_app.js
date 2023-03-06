@@ -13,7 +13,7 @@ export default function MyApp({ Component,  pageProps: { session, ...pageProps }
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Lokalize</title>
         <meta name="description" content="Lokalize" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
