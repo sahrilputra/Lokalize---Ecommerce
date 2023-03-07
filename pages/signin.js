@@ -8,9 +8,18 @@ import { useState } from 'react';
 import { getProviders, signIn } from 'next-auth/react';
 import { Provider } from 'react-redux';
 import Image from 'next/image';
-
+const initialValues = {
+    login_email: "",
+    login_password: "",
+    name: "",
+    email: "",
+    password: "",
+    conf_password: "",
+    message: "",
+};
 
 const index = ({ providers }) => {
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         // setUser({ ...user, [name]: value });
@@ -73,26 +82,6 @@ const index = ({ providers }) => {
                         </div>
 
                         <hr /> Or continue with <hr />
-                        {/* <div className={styles.other}>
-                                <div className={styles.providers}>
-                                    <Image
-                                        src="/providers/google.png"
-                                        alt="github icon"
-                                        width={30}
-                                        height={30}
-                                    />
-                                    <p>{provider.name[1]}</p>
-                                </div>
-                                <div className={styles.providers}>
-                                    <Image
-                                        src="/providers/github.png"
-                                        alt="github icon"
-                                        width={30}
-                                        height={30}
-                                    />
-                                    <p>Github</p>
-                                </div>
-                            </div> */}
 
                         <div className={styles.other}>
                             {providers.map((provider) => {
@@ -105,7 +94,13 @@ const index = ({ providers }) => {
                                             className={styles.socials__btn}
                                             onClick={() => signIn(provider.id)}
                                         >
-                                            <img src={`../../providers/${provider.name}.png`} alt="provider-logo" />
+                                            <Image
+                                                className={styles.u__bounceInDown}
+                                                src={`/providers/${provider.name}.png`}
+                                                width={30}
+                                                height={30}
+                                                alt="provider icon"
+                                            />
                                             Signin with {provider.name}
                                         </button>
                                     </div>
@@ -126,19 +121,33 @@ const index = ({ providers }) => {
                                         <Form>
                                             <LoginInput
                                                 type="text"
-                                                name="login_email"
+                                                name="name"
+                                                icon="user"
+                                                placeholder="Full Name"
+                                                onChange={handleChange}
+                                            />
+                                            <LoginInput
+                                                type="text"
+                                                name="email"
                                                 icon="email"
-                                                placeholder="Email"
+                                                placeholder="Email Address"
                                                 onChange={handleChange}
                                             />
                                             <LoginInput
                                                 type="password"
-                                                name="login_password"
+                                                name="password"
                                                 icon="password"
                                                 placeholder="Password"
                                                 onChange={handleChange}
                                             />
-                                            <button type="type" text="Sign in" >Sing in</button>
+                                            <LoginInput
+                                                type="password"
+                                                name="conf_password"
+                                                icon="password"
+                                                placeholder="Re-Type Password"
+                                                onChange={handleChange}
+                                            />
+                                            <button type="type" text="Sign in" className={styles.button__primary} >Register</button>
                                             <div className={styles.forgot}>
                                                 <Link href="/forget">Forgot Pasword ?</Link>
                                             </div>
