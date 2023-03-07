@@ -1,0 +1,95 @@
+{ 
+    "tas" : [
+        {
+            "id": 1,
+            "name": "Tas Ransel",
+            "description": "Tas ransel dengan bahan yang kuat dan nyaman digunakan",
+            "price": 150000,
+            "color": "Abu-abu",
+            "size": "Large",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+
+        },
+        {
+            "id": 2,
+            "name": "Tas Messenger",
+            "description": "Tas messenger dengan bahan kulit yang berkualitas",
+            "price": 300000,
+            "color": "Coklat",
+            "size": "Medium",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Tas Selempang",
+            "description": "Tas selempang dengan bahan kanvas yang ringan",
+            "price": 75000,
+            "color": "Biru",
+            "size": "Small",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Tas Tote Bag",
+            "description": "Tas tote bag dengan bahan kanvas yang kuat",
+            "price": 90000,
+            "color": "Putih",
+            "size": "Medium",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Tas Laptop",
+            "description": "Tas laptop dengan bahan anti air",
+            "price": 200000,
+            "color": "Hitam",
+            "size": "Large",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Tas Duffel",
+            "description": "Tas duffel dengan bahan nylon yang tahan air",
+            "price": 250000,
+            "color": "Merah",
+            "size": "Large",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Tas Clutch",
+            "description": "Tas clutch dengan bahan kulit sintetis",
+            "price": 100000,
+            "color": "Emas",
+            "size": "Small",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Tas Hobo",
+            "description": "Tas hobo dengan bahan suede yang halus",
+            "price": 180000,
+            "color": "Hijau",
+            "size": "Medium",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Tas Tali Pinggang",
+            "description": "Tas tali pinggang dengan bahan kulit asli",
+            "price": 120000,
+            "color": "Coklat",
+            "size": "Small",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Tas Sling",
+            "description": "Tas sling dengan bahan denim yang trendy",
+            "price": 80000,
+            "color": "Biru",
+            "size": "Medium",
+            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        }
+    ]
+}

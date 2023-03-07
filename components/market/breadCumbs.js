@@ -6,7 +6,7 @@ export const BreadCrumbsElement = () => {
     return (
         <>
             <div className={styles.breadcrumbs}>
-                <Breadcrumb aria-label="Default breadcrumb example">
+                <Breadcrumb aria-label="breadcrumb">
                     <Breadcrumb.Item
                         href="/"
                         icon={HiHome}

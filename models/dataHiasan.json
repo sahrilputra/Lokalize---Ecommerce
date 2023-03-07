@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Bunga Mawar Merah",
+        "description": "Bunga mawar merah segar yang bisa dijadikan hiasan di dalam rumah.",
+        "price": 15000,
+        "image_url": "https://example.com/images/mawar_merah.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Lampion Kertas",
+        "description": "Lampion kertas dengan berbagai warna yang cocok untuk dekorasi di dalam ruangan.",
+        "price": 25000,
+        "image_url": "https://example.com/images/lampion_kertas.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Topiari Buah",
+        "description": "Topiari buah yang terbuat dari buah-buahan segar dan cantik sebagai hiasan meja.",
+        "price": 35000,
+        "image_url": "https://example.com/images/topiari_buah.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Lukisan Kanvas",
+        "description": "Lukisan kanvas dengan berbagai jenis gambar yang bisa ditempelkan di dinding.",
+        "price": 50000,
+        "image_url": "https://example.com/images/lukisan_kanvas.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Gantungan Kunci Kucing",
+        "description": "Gantungan kunci lucu dengan bentuk kucing yang bisa dijadikan hiasan kunci atau tas.",
+        "price": 10000,
+        "image_url": "https://example.com/images/gantungan_kunci_kucing.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Vas Bunga Kaca",
+        "description": "Vas bunga kaca yang cantik dengan berbagai warna dan ukuran yang berbeda.",
+        "price": 45000,
+        "image_url": "https://example.com/images/vas_bunga_kaca.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Patung Kayu",
+        "description": "Patung kayu dengan berbagai bentuk dan ukuran yang bisa dijadikan hiasan di ruangan.",
+        "price": 30000,
+        "image_url": "https://example.com/images/patung_kayu.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Keranjang Rotan",
+        "description": "Keranjang rotan dengan berbagai ukuran yang bisa dijadikan hiasan atau wadah barang di rumah.",
+        "price": 20000,
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Kaligrafi",
+        "description": "Kaligrafi dengan tulisan arab yang indah dan bisa dijadikan hiasan di ruangan.",
+        "price": 55000,
+        "image_url": "https://example.com/images/kaligrafi.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Gorden",
+        "description": "Gorden dengan berbagai motif dan warna yang bisa digunakan untuk menghiasi jendela.",
+        "price": 70000,
+        "image_url" : "https://jasaarsitekjakarta.com/wp-content/uploads/2015/10/Model-Gorden-Minimalis-www.drogpatravel.blogspot.com-5.jpg"
+      }
+    ]
+    }
+  

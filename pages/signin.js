@@ -8,6 +8,9 @@ import { useState } from 'react';
 import { getProviders, signIn } from 'next-auth/react';
 import { Provider } from 'react-redux';
 import Image from 'next/image';
+import { Breadcrumb } from 'flowbite-react'
+import { HiHome } from "react-icons/hi";
+import { ButtonIconArrow, SecondaryButton } from '@/components/buttons';
 const initialValues = {
     login_email: "",
     login_password: "",
@@ -71,7 +74,7 @@ const index = ({ providers }) => {
                                                 placeholder="Password"
                                                 onChange={handleChange}
                                             />
-                                            <button className={styles.button__primary} type="type" text="Sign in" >Masuk</button>
+                                            <ButtonIconArrow type={"button"} text={"Masuk"} icon={HiHome} />
                                             <div className={styles.forgot}>
                                                 <Link href="/forget">Forgot Pasword ?</Link>
                                             </div>
@@ -96,7 +99,7 @@ const index = ({ providers }) => {
                                         >
                                             <Image
                                                 className={styles.u__bounceInDown}
-                                                src={`/providers/${provider.name}.png`}
+                                                src={`/providers/${provider.id}.png`}
                                                 width={30}
                                                 height={30}
                                                 alt="provider icon"
@@ -147,7 +150,7 @@ const index = ({ providers }) => {
                                                 placeholder="Re-Type Password"
                                                 onChange={handleChange}
                                             />
-                                            <button type="type" text="Sign in" className={styles.button__primary} >Register</button>
+                                            <SecondaryButton type={"button"} text={"Daftar"} routes={"#"} />
                                             <div className={styles.forgot}>
                                                 <Link href="/forget">Forgot Pasword ?</Link>
                                             </div>

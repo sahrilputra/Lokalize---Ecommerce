@@ -1,0 +1,94 @@
+{ 
+    "baju" : [
+    {
+        "id": 1,
+        "name": "Kemeja Lengan Pendek",
+        "description": "Kemeja lengan pendek dengan bahan katun yang adem",
+        "price": 100000,
+        "color": "Putih",
+        "size": "M",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Kaos Polos",
+        "description": "Kaos polos dengan bahan cotton combed 24s",
+        "price": 50000,
+        "color": "Hitam",
+        "size": "L",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Blus Wanita",
+        "description": "Blus wanita dengan bahan chiffon yang lembut",
+        "price": 80000,
+        "color": "Merah",
+        "size": "S",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Hoodie",
+        "description": "Hoodie dengan bahan fleece yang hangat",
+        "price": 150000,
+        "color": "Abu-abu",
+        "size": "XL",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Kemeja Lengan Panjang",
+        "description": "Kemeja lengan panjang dengan bahan katun yang nyaman",
+        "price": 120000,
+        "color": "Biru",
+        "size": "M",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Kaos Sablon",
+        "description": "Kaos sablon dengan bahan cotton combed 30s",
+        "price": 60000,
+        "color": "Putih",
+        "size": "S",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Dress",
+        "description": "Dress dengan bahan katun dan motif bunga-bunga",
+        "price": 110000,
+        "color": "Pink",
+        "size": "M",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Jaket Kulit",
+        "description": "Jaket kulit dengan bahan kulit sapi asli",
+        "price": 500000,
+        "color": "Coklat",
+        "size": "L",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tank Top",
+        "description": "Tank top dengan bahan cotton combed 20s",
+        "price": 40000,
+        "color": "Hitam",
+        "size": "M",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Celana Jeans",
+        "description": "Celana jeans dengan bahan denim yang awet",
+        "price": 200000,
+        "color": "Biru",
+        "size": "32",
+        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+    }
+]
+}

@@ -1,0 +1,115 @@
+.button {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 220px;
+    height: 55px;
+    font-weight: 600;
+    color: #fff;
+    background: $primary;
+    display: flex;
+    border-radius: $--rounded-btn;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 18px;
+    animation-duration: $--animation-btn;
+    span {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    &:hover {
+        background: $primary-focus;
+    }
+
+    .svg__wrap {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 7.5px;
+        right: 5px;
+        background: $primary-focus;
+        
+
+        svg {
+            fill: $primary-content;
+        }
+
+        &:hover {
+            background: $primary;
+
+            svg {
+                fill: $primary-focus;
+            }
+        }
+    }
+}
+
+.primaryButton {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 220px;
+    height: 55px;
+    font-weight: 400;
+    color: #fff;
+    background: $primary;
+    display: flex;
+    border-radius: $--rounded-btn;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    animation-duration: $--animation-btn;
+    margin-top: 18px;
+
+    span {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    &:hover {
+        background: $primary-focus;
+    }
+
+}
+
+.secondaryButton {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 220px;
+    height: 55px;
+    font-weight: 400;
+    color: #fff;
+    background: $secondary;
+    display: flex;
+    border-radius: $--rounded-btn;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    animation-duration: $--animation-btn;
+    margin-top: 18px;
+
+    span {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    &:hover {
+        background: $secondary-focus;
+    }
+
+}

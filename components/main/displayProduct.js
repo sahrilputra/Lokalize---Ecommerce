@@ -1,9 +1,15 @@
 import styles from '../main/styles.module.scss';
 import Image from 'next/image'
 import Link from 'next/link';
+import { Carousel } from 'flowbite-react';
+import { PrimaryButton, ButtonIconArrow } from '../buttons';
+import { ProductSlide } from './productSlide';
+
 export const DisplayProduct = () => {
     return (
-        <div className={styles.product}>
+       
+        <div id="content" className={styles.product}>
+             
             <div className={styles.product__heading}>
                 <h1>Boost your STYLE</h1>
             </div>
@@ -12,32 +18,51 @@ export const DisplayProduct = () => {
             </div>
             <div className={styles.product__mainContainer}>
                 <div className={styles.product__card__container}>
-                <div className={styles.product__card}>
-                    <div className={styles.product__card__image}>
-                        <Image
-                            className={styles.product__display}
-                            src="/product/display1.png"
-                            width={280}
-                            height={280}
-                            alt="Image Component"
-                        />
+                    <div className={styles.product__card}>
+                        <Carousel indicators={false} slideInterval={5000}>
+                            <div className={styles.product__card__image}>
+                                <Image
+                                    className={styles.product__display}
+                                    src="/product/display1.png"
+                                    width={280}
+                                    height={280}
+                                    alt="Image Component"
+                                />
+                                <div className={styles.product__card__title}>
+                                    <h3 className={styles.product__card__heading}>NAME</h3>
+                                    <p className={styles.product__card__description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
+                                    <p className={styles.product__card__money}>Rp. 24.000</p>
+                                </div>
+                            </div>
+                            <div className={styles.product__card__image}>
+                                <Image
+                                    className={styles.product__display}
+                                    src="/product/display1.png"
+                                    width={280}
+                                    height={280}
+                                    alt="Image Component"
+                                />
+                                <div className={styles.product__card__title}>
+                                    <h3 className={styles.product__card__heading}>NAME</h3>
+                                    <p className={styles.product__card__description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
+                                    <p className={styles.product__card__money}>Rp. 24.000</p>
+                                </div>
+                            </div>
+                        </Carousel>
                     </div>
-                    <div className={styles.product__card__title}>
-                        <h3 className={styles.product__card__heading}>NAME</h3>
-                        <p className={styles.product__card__description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
-                        <p className={styles.product__card__money}>Rp. 24.000</p>
-                    </div>
-                </div>
-                
-                
+
+
+
                 </div>
                 <div className={styles.product__content}>
                     <h3 className={styles.product__content__title}>Product Kami</h3>
                     <p className={styles.product__content__param}>Jelajahi lebih dalam produk unggulan kami di lokalize</p>
                     <div className={styles.product__content__button}>
-                        <button className={styles.greenButton} placehoder="explore"><Link href="/market">Explore</Link></button>
+                        <PrimaryButton className type="primary Button" text={"Explore market"} routes={"/market"}/>
                     </div>
-                    <div className={styles.product__content__display}>
+                    <ProductSlide />
+                    {/* <div className={styles.product__content__display}>
+                        
                         <div className={styles.product__content__img}>
                             <Image
                                 className={styles.product__content__product}
@@ -65,8 +90,8 @@ export const DisplayProduct = () => {
                                 alt="Image Component"
                             />
                         </div>
-                    
-                    </div>
+
+                    </div> */}
                 </div>
             </div>
         </div>

@@ -91,12 +91,14 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
     margin-top: 20px;
     width: 160px;
     height: 48px;
-    border-radius: 20px;
+    border-radius: $--rounded-btn;
     color: #fff;
-    background: rgb(80, 235, 178);
-    background: linear-gradient(125deg, rgba(80, 235, 178, 1) 23%, rgba(66, 80, 231, 1) 100%);
-}
+    background: $primary;
 
+    :hover {
+        background-color: aquamarine;
+    }
+}
 
 // content styles
 
@@ -204,11 +206,9 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         gap: 50px;
-        background: rgba(255, 255, 255, 0.345);
-        mix-blend-mode: normal;
-        box-shadow: -9px 4px 100px 15px rgba(0, 0, 0, 0.118);
         padding: 20px;
         border-radius: 20px;
+
     }
 
     &__card {
@@ -216,40 +216,60 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
         width: 300px;
         height: 420px;
         padding: 6px;
-        border-radius: 20px;
-        background-color: #ffff;
-        box-shadow: -9px 4px 100px 15px rgba(0, 0, 0, 0.118);
-        &__container{
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+        &__container {
             margin: auto;
         }
-        &__title{
+
+        &__title {
             padding: 10px;
-            p{
+
+            p {
                 padding: 10px;
             }
         }
+
         &__heading {
             font-size: 22px;
             font-weight: 600;
+            color: $base-content;
         }
-        &__description{
+
+        &__description {
             font-weight: 200;
             font-size: 16px;
+            color: $base-content;
         }
-        &__money{
+
+        &__money {
             font-size: 22px;
             font-weight: 500;
             text-align: right;
         }
     }
+
     &__display {
         text-align: center;
         margin: auto;
     }
 
-    &__product__content {
+    &__content {
+        margin-top: 10px;
         text-align: center;
         position: relative;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 10px;
     }
 
     &__content__display {
@@ -257,12 +277,17 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+
     }
 
     &__content__title {
+        margin-top: 19px;
         font-size: 30px;
         font-weight: 600;
+        margin: auto;
         margin-bottom: 12px;
+        width: 80%;
+        border-bottom: 3px solid #dedede;
     }
 
     &__content__param {
@@ -289,7 +314,7 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
         background-color: #ffff;
         box-shadow: -9px 4px 100px 15px rgba(0, 0, 0, 0.118);
         border-radius: 22px;
-        position:inherit;
+        position: inherit;
         bottom: 0;
     }
 

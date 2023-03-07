@@ -2,7 +2,10 @@ import React from 'react'
 import styles from '../market/styles.module.scss';
 import Image from 'next/image';
 import { HiOutlineHeart, HiOutlineShoppingCart } from "react-icons/hi";
+import data from '../../models/dataTas'
 export const CardComponent = () => {
+  console.log(data);
+  const item = data.tas;
   return (
     <>
       <div className={styles.market}>
@@ -34,143 +37,43 @@ export const CardComponent = () => {
               />
             </div>
           </div>
+
           <div className={styles.market__card}>
-            <div className={styles.market__card__item}>
-              <div className={styles.market__card__image}>
-                <Image
-                  src="/product/display1.png"
-                  alt="baju icon"
-                  width={240}
-                  height={180}
-                />
-              </div>
-              <div className={styles.market__card__text}>
-                <div className={styles.market__card__icon}>
-                  <HiOutlineHeart className={styles.heartIcon} />
-                </div>
-                <h3 className={styles.market__card__title}>Name Product</h3>
-                <div className={styles.market__card__param}>
-                  <p className={styles.market__card__description}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nesciunt!
-                  </p>
-                </div>
-                <div className={styles.market__card__harga}>
-                  <div className={styles.card__marketIcon}>
-                    <HiOutlineShoppingCart className={styles.cartIcon} />
+            {item.map((tas) => {
+              return(
+                <>
+                <div className={styles.market__card__item}>
+                  <div className={styles.market__card__image}>
+                    <Image
+                      src="/product/display1.png"
+                      alt="baju icon"
+                      width={240}
+                      height={180}
+                    />
                   </div>
-                  <h3>Rp. 20.000</h3>
-                </div>
-              </div>
-            </div>
-            <div className={styles.market__card__item}>
-              <div className={styles.market__card__image}>
-                <Image
-                  src="/product/bagOne.png"
-                  alt="baju icon"
-                  width={240}
-                  height={180}
-                />
-              </div>
-              <div className={styles.market__card__text}>
-                <div className={styles.market__card__icon}>
-                  <HiOutlineHeart className={styles.heartIcon} />
-                </div>
-                <h3 className={styles.market__card__title}>Name Product</h3>
-                <div className={styles.market__card__param}>
-                  <p className={styles.market__card__description}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nesciunt!
-                  </p>
-                </div>
-                <div className={styles.market__card__harga}>
-                  <div className={styles.card__marketIcon}>
-                    <HiOutlineShoppingCart className={styles.cartIcon} />
+                  <div className={styles.market__card__text}>
+                    <div className={styles.market__card__icon}>
+                      <HiOutlineHeart className={styles.heartIcon} />
+                    </div>
+                    <h3 className={styles.market__card__title}>{tas.name}</h3>
+                    <div className={styles.market__card__param}>
+                      <p className={styles.market__card__description}>
+                        {tas.description}
+                      </p>
+                    </div>
+                    <div className={styles.market__card__harga}>
+                      <div className={styles.card__marketIcon}>
+                        <HiOutlineShoppingCart className={styles.cartIcon} />
+                      </div>
+                      <h3>Rp.{tas.price}</h3>
+                    </div>
                   </div>
-                  <h3>Rp. 20.000</h3>
                 </div>
-              </div>
-            </div>
-            <div className={styles.market__card__item}>
-              <div className={styles.market__card__image}>
-                <Image
-                  src="/product/display1.png"
-                  alt="baju icon"
-                  width={240}
-                  height={180}
-                />
-              </div>
-              <div className={styles.market__card__text}>
-                <div className={styles.market__card__icon}>
-                  <HiOutlineHeart className={styles.heartIcon} />
-                </div>
-                <h3 className={styles.market__card__title}>Name Product</h3>
-                <div className={styles.market__card__param}>
-                  <p className={styles.market__card__description}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nesciunt!
-                  </p>
-                </div>
-                <div className={styles.market__card__harga}>
-                  <div className={styles.card__marketIcon}>
-                    <HiOutlineShoppingCart className={styles.cartIcon} />
-                  </div>
-                  <h3>Rp. 20.000</h3>
-                </div>
-              </div>
-            </div>
-            <div className={styles.market__card__item}>
-              <div className={styles.market__card__image}>
-                <Image
-                  src="/product/bagOne.png"
-                  alt="baju icon"
-                  width={240}
-                  height={180}
-                />
-              </div>
-              <div className={styles.market__card__text}>
-                <div className={styles.market__card__icon}>
-                  <HiOutlineHeart className={styles.heartIcon} />
-                </div>
-                <h3 className={styles.market__card__title}>Name Product</h3>
-                <div className={styles.market__card__param}>
-                  <p className={styles.market__card__description}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nesciunt!
-                  </p>
-                </div>
-                <div className={styles.market__card__harga}>
-                  <div className={styles.card__marketIcon}>
-                    <HiOutlineShoppingCart className={styles.cartIcon} />
-                  </div>
-                  <h3>Rp. 20.000</h3>
-                </div>
-              </div>
-            </div>
-            <div className={styles.market__card__item}>
-              <div className={styles.market__card__image}>
-                <Image
-                  src="/product/bagOne.png"
-                  alt="baju icon"
-                  width={240}
-                  height={180}
-                />
-              </div>
-              <div className={styles.market__card__text}>
-                <div className={styles.market__card__icon}>
-                  <HiOutlineHeart className={styles.heartIcon} />
-                </div>
-                <h3 className={styles.market__card__title}>Name Product</h3>
-                <div className={styles.market__card__param}>
-                  <p className={styles.market__card__description}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nesciunt!
-                  </p>
-                </div>
-                <div className={styles.market__card__harga}>
-                  <div className={styles.card__marketIcon}>
-                    <HiOutlineShoppingCart className={styles.cartIcon} />
-                  </div>
-                  <h3>Rp. 20.000</h3>
-                </div>
-              </div>
-            </div>
+                </>
+              )
+            })}
           </div>
+
         </div>
       </div>
     </>

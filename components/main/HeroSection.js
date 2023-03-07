@@ -1,5 +1,6 @@
 import styles from '../main/styles.module.scss';
 import Image from 'next/image';
+import { ButtonIconArrow } from '../buttons';
 export const HeroSection = () => {
   return (
     <>
@@ -26,7 +27,7 @@ export const HeroSection = () => {
                 <p className={styles.hero__desc}>
                 Tuangkan imajinasi anda menjadi produk inovatif bersama lokalize
                 </p>
-                <button className={styles.greenButton}>Mulai</button>
+                <ButtonIconArrow type="button" text={"Mulai"} href="#content"/>
               </div>
             </div>  
 
