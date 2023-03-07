@@ -53,7 +53,7 @@ export const UserMenu = ({ session }) => {
 
                 <div className={styles.btn}>
                     {session ? (
-                         <button className={styles.btn__secondary}>Sign out</button>
+                         <button className={styles.btn__secondary} onClick={()=> signOut}>Sign out</button>
                     ):(
                         <>
                         <button className={styles.btn__secondary}> <Link href="/signin">Register</Link></button>

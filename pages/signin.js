@@ -10,36 +10,36 @@ import { Provider } from 'react-redux';
 import Image from 'next/image';
 
 
-const index = () => {
+const index = ({ providers }) => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         // setUser({ ...user, [name]: value });
     }
-    console.log(handleChange);
+    console.log(providers);
     return (
         <>
-        <Navbar />
-        <div className={styles.component}>
-                    <div className={styles.component__large}>
-                        <Image
-                        src="/component/component__large.svg" 
+            <Navbar />
+            <div className={styles.component}>
+                <div className={styles.component__large}>
+                    <Image
+                        src="/component/component__large.svg"
                         alt="componentLarge"
                         width={400}
                         height={400}
-                        />
-                    </div>
-                    <div className={styles.component__medium}>
-                        <Image
-                        class={styles.mediumSvg}
-                        src="/component/component__medium.svg" 
-                        alt="componentLarge"
-                        width={400}
-                        height={400}
-                        />
-                    </div>
+                    />
                 </div>
+                <div className={styles.component__medium}>
+                    <Image
+                        className={styles.mediumSvg}
+                        src="/component/component__medium.svg"
+                        alt="componentLarge"
+                        width={400}
+                        height={400}
+                    />
+                </div>
+            </div>
             <div className={styles.container}>
-            
+
                 <div className={styles.login}>
                     <div className={styles.login__container}>
                         <h1>Masuk</h1>
@@ -72,27 +72,48 @@ const index = () => {
                             </Formik>
                         </div>
 
-                        <hr /> Or <hr />
+                        <hr /> Or continue with <hr />
+                        {/* <div className={styles.other}>
+                                <div className={styles.providers}>
+                                    <Image
+                                        src="/providers/google.png"
+                                        alt="github icon"
+                                        width={30}
+                                        height={30}
+                                    />
+                                    <p>{provider.name[1]}</p>
+                                </div>
+                                <div className={styles.providers}>
+                                    <Image
+                                        src="/providers/github.png"
+                                        alt="github icon"
+                                        width={30}
+                                        height={30}
+                                    />
+                                    <p>Github</p>
+                                </div>
+                            </div> */}
+
                         <div className={styles.other}>
-                            <div className={styles.providers}>
-                                <Image 
-                                src="/providers/google.png"
-                                alt="github icon"
-                                width={30}
-                                height={30}
-                                />
-                                <p>Google</p>
-                            </div>
-                            <div className={styles.providers}>
-                                <Image 
-                                src="/providers/github.png"
-                                alt="github icon"
-                                width={30}
-                                height={30}
-                                />
-                                <p>Github</p>
-                            </div>
+                            {providers.map((provider) => {
+                                if (provider.name == "Credentials") {
+                                    return;
+                                }
+                                return (
+                                    <div key={provider.name}>
+                                        <button
+                                            className={styles.socials__btn}
+                                            onClick={() => signIn(provider.id)}
+                                        >
+                                            <img src={`../../providers/${provider.name}.png`} alt="provider-logo" />
+                                            Signin with {provider.name}
+                                        </button>
+                                    </div>
+                                );
+                            })
+                            }
                         </div>
+
                     </div>
                 </div>
                 <div className={styles.signup}>
@@ -121,7 +142,7 @@ const index = () => {
                                             <div className={styles.forgot}>
                                                 <Link href="/forget">Forgot Pasword ?</Link>
                                             </div>
-                                            
+
                                         </Form>
                                     )
                                 }
@@ -133,5 +154,15 @@ const index = () => {
         </>
     )
 }
+export async function getServerSideProps(content) {
+    const providers = Object.values(await getProviders());
+    console.log(providers);
+    return {
+        props: {
+            providers,
+        }
+    }
+}
+
 
 export default index

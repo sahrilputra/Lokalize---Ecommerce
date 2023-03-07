@@ -4,7 +4,6 @@ import { BiUser, BiSend ,BiKey } from "react-icons/bi";
 
 export const LoginInput = ({ icon, placeholder, ...props}) => {
     const [field, meta] = useField(props)
-    console.log(meta);
     return (
         <div className={`${styles.input} ${meta.touched && meta.error ? styles.error : ""} `}>
             {icon == "user" ? (
@@ -33,3 +32,4 @@ export const LoginInput = ({ icon, placeholder, ...props}) => {
         </div>
     );
 }
+
