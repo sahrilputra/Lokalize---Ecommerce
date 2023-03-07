@@ -25,7 +25,7 @@ export const Content = () => {
                                 Lokalize adalah platform yang menghubungkan penjual dan pembeli hasil kerajinan tangan dari UMKM yang berbasis di Indonesia. Lokalize dibuat untuk mempermudah para pedagang UMKM untuk memperluas jangkauan dagang dan memudahkan pembeli untuk membeli kerajinan dari suatu daerah tertentu.
                                 <br>
                                 </br>
-                                Produk kerajinan yang ditawarkan pun beragama, mulai dari berbagai macam tas, sandal, kain batik, dan masih banyak lagi. Produk tersebut dibuat dengan kekhasan daerah masing-masing dan dibuat dengan bahan yang berkualitas.
+                                Produk kerajinan yang ditawarkan pun beragam, mulai dari berbagai macam tas, sandal, kain batik, dan masih banyak lagi. Produk tersebut dibuat dengan kekhasan daerah masing-masing dan dibuat dengan bahan yang berkualitas.
                             </p>
                             <div className={styles.content__ciclreSvg}>
                                 <Image

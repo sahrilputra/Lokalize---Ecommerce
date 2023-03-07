@@ -16,7 +16,7 @@ export const HeroSection = () => {
         <div className={styles.hero__container}>
             <div className={styles.hero__textContent}>
               <h2 className={styles.hero__slogan}>
-                Your <span className={styles.hero__boldOne}>
+                You <span className={styles.hero__boldOne}>
                   Imagine
                   </span> <br /> 
                   We <span className={styles.hero__boldTwo}>
