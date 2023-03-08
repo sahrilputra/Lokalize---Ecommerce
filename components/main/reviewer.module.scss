@@ -1,0 +1,71 @@
+.review {
+    font-family: 'poppins';
+    position: relative;
+    &__card {
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.Carousel{
+    text-align: center;
+    margin: auto;
+}
+.Card{
+    margin: auto;
+}
+
+.content__container{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container{
+    position: relative;
+    .component{
+        position: absolute;
+        top: -10px;
+        left: -50px;
+     }
+}
+.flex {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.heading_review {
+    font-family: 'Poppins';
+    h1 {
+        font-weight: 600;
+        font-size: 80px;
+        text-shadow: 10px -8px 0px rgba(45, 45, 45, 0.208);
+        width: auto;
+        position: relative;
+    }
+
+    .absolute {
+        position: absolute;
+        margin: 0 auto;
+        font-size: 140px;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgba(60, 60, 60, 0.556);
+        display: block;
+        fill: none;
+        overflow: hidden;
+        z-index: -1 !important;
+    }
+}
