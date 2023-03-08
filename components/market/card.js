@@ -22,6 +22,7 @@ export const CardComponent = () => {
   }
   return (
     <>
+    
       <div className={styles.market}>
         <h3 className={styles.market__tag}>Discover</h3>
         <div className={styles.market__container}>
@@ -44,7 +45,7 @@ export const CardComponent = () => {
             </div>
             <div className={styles.market__item}>
               <Image
-                src="/market/baju_item.svg"
+                src="/market/hiasan.png"
                 alt="baju icon"
                 width={240}
                 height={180}
@@ -58,12 +59,7 @@ export const CardComponent = () => {
                 <>
                   <div className={styles.market__card__item}>
                     <div className={styles.market__card__image}>
-                      <Image
-                        src="/product/display1.png"
-                        alt="baju icon"
-                        width={240}
-                        height={180}
-                      />
+                      <img src={`${tas.image_url}`} alt="" />
                     </div>
                     <div className={styles.market__card__text}>
                       <div className={styles.market__card__icon}>

@@ -27,7 +27,7 @@ export const HeroSection = () => {
                 <p className={styles.hero__desc}>
                 Tuangkan imajinasi anda menjadi produk inovatif bersama lokalize
                 </p>
-                <ButtonIconArrow type="button" text={"Mulai"} href="#content"/>
+                <ButtonIconArrow type="button" text={"Mulai"} routes={"/market"}/>
               </div>
             </div>  
 

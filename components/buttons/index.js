@@ -5,14 +5,17 @@ const ButtonIconArrow = ({
     type,
     text,
     icon,
+    routes
 }) => {
     return (
+    <Link href={routes}>
         <buton className={styles.button} type={type} >
             <span>{text}</span>
             <div className={styles.svg__wrap}>
                 <BiRightArrowAlt />
             </div>
         </buton>
+        </Link>
     )
 }
 
@@ -37,10 +40,11 @@ const PrimaryButton = ({
     routes,
 }) => {
     return (
+        <Link href={routes}>
         <buton className={styles.primaryButton} type={type} >
             <span>{text}</span>
-            <Link href={routes}></Link>
         </buton>
+        </Link>
     )
 }
 

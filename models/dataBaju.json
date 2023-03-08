@@ -1,5 +1,4 @@
-{ 
-    "baju" : [
+{ "baju" : [
     {
         "id": 1,
         "name": "Kemeja Lengan Pendek",
@@ -7,7 +6,7 @@
         "price": 100000,
         "color": "Putih",
         "size": "M",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://s4.bukalapak.com/img/9779289022/w-1000/Kemeja_Pilot_Putih_Lengan_Pendek.jpg"
     },
     {
         "id": 2,
@@ -16,16 +15,16 @@
         "price": 50000,
         "color": "Hitam",
         "size": "L",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://th.bing.com/th/id/OIP.fnAshVv5wxbMSw328ii20QAAAA?pid=ImgDet&rs=1"
     },
     {
         "id": 3,
         "name": "Blus Wanita",
         "description": "Blus wanita dengan bahan chiffon yang lembut",
         "price": 80000,
-        "color": "Merah",
+        "color": "Putih",
         "size": "S",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://s3.bukalapak.com/img/327629374/w-1000/blus_putih_wanita_untuk_kerja___blus_wanita_warna_putih_baju.png"
     },
     {
         "id": 4,
@@ -34,7 +33,7 @@
         "price": 150000,
         "color": "Abu-abu",
         "size": "XL",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://th.bing.com/th/id/OIP.d_J-ylVeyjruMCi0QA891QHaJo?pid=ImgDet&rs=1"
     },
     {
         "id": 5,
@@ -43,7 +42,7 @@
         "price": 120000,
         "color": "Biru",
         "size": "M",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://th.bing.com/th/id/R.80869c7619bd9e8d5577710a31aeced7?rik=fcsOg73bQCNYEA&riu=http%3a%2f%2fwww.dececco.net%2fweb%2fwp-content%2fuploads%2f2016%2f04%2fCH3A-768x768.jpg&ehk=oBzHlD0DRB3HE4x0TvTAU%2bdbNfq3Yvqd5oRVpSyoBrw%3d&risl=&pid=ImgRaw&r=0"
     },
     {
         "id": 6,
@@ -52,7 +51,7 @@
         "price": 60000,
         "color": "Putih",
         "size": "S",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://lh6.googleusercontent.com/proxy/Za73vhBe7dZscG-clwn1fifCVmb4MtXvCq52lPPpcH-vWvUX5jBjFXJ4DoFSzGKDstRW5SUjsY86ld-QULtzPXE664xb51KwzIZvXyowlo8xSWJOfB1ughrG=w1200-h630-p-k-no-nu"
     },
     {
         "id": 7,
@@ -61,7 +60,7 @@
         "price": 110000,
         "color": "Pink",
         "size": "M",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://th.bing.com/th/id/R.571e4caff444e21443216635bae98668?rik=kiMoyAqoRkGg3g&riu=http%3a%2f%2fwww.sakurafashionshop.com%2fwp-content%2fuploads%2f2017%2f09%2fDRESS-WANITA-MODEL-SIMPLE-GAMBAR-CANTIK-FASHION.jpg&ehk=qH2iiTIiGL%2bBotWllhR2%2ffNqUDwBvHJTPOsVALFEXDs%3d&risl=&pid=ImgRaw&r=0"
     },
     {
         "id": 8,
@@ -70,16 +69,16 @@
         "price": 500000,
         "color": "Coklat",
         "size": "L",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://th.bing.com/th/id/R.77552b7b5136bda08ce45cf34caa4573?rik=b6XVcX6YKAvAFw&riu=http%3a%2f%2f2e88693004cc26dda94d-9c62e3751357fcd96c1f2ac548e38813.r35.cf2.rackcdn.com%2fproduct-longrect-608641-234797-1452008800-d2e8ed2f8cafb098e4f6aa16144053f1.jpg&ehk=nKK7GuYZvaL6bpVIhQ0oEpNSvBA9J1ubXF9PBnbIBNM%3d&risl=&pid=ImgRaw&r=0"
     },
     {
         "id": 9,
-        "name": "Tank Top",
-        "description": "Tank top dengan bahan cotton combed 20s",
+        "name": "Outer",
+        "description": "Outer dengan bahan kain katun",
         "price": 40000,
-        "color": "Hitam",
+        "color": "soklat",
         "size": "M",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.co.id%2FCARDIGAN-OUTER-WANITA-BASIC-FORA-VOL.2-i.76105769.5411074883&psig=AOvVaw16g3ybzelw9DZFYrcjO95y&ust=1678357641563000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLjtxtqPzP0CFQAAAAAdAAAAABAE"
     },
     {
         "id": 10,
@@ -88,7 +87,7 @@
         "price": 200000,
         "color": "Biru",
         "size": "32",
-        "image_url": "https://example.com/images/keranjang_rotan.jpg"
+        "image_url": "https://th.bing.com/th/id/R.859bdc03e4ae169e63576d184cce361c?rik=Nyy454m4%2bothIQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-plIeOg10r-4%2fUzi8U15S2vI%2fAAAAAAAAAPI%2fmaHyrEdI5hc%2fs1600%2fCelana%2bJeans%2bbayi%2bPerempuan%2b-%2b2.jpg&ehk=Ci%2b7V3orPImc0i0ir2oW9mGJ4ZFsJi%2fHtt3Pb9o54Sc%3d&risl=&pid=ImgRaw&r=0"
     }
 ]
 }

@@ -1,6 +1,7 @@
 .review {
     font-family: 'poppins';
     position: relative;
+
     &__card {
         img {
             width: 60px;
@@ -24,16 +25,24 @@
     gap: 2px;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .container{
     margin-top: 10px;
     position: relative;
+    z-index: -1;
     .component{
         position: absolute;
         top: -10px;
         left: -50px;
      }
+}
+.abs{
+    position: absolute;
+    top: -13px;
+    left: -10px;
+    overflow: hidden;
 }
 .flex {
     width: auto;
@@ -67,6 +76,6 @@
         display: block;
         fill: none;
         overflow: hidden;
-        z-index: -1 !important;
+
     }
 }

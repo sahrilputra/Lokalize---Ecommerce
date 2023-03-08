@@ -21,9 +21,9 @@ export const ReviewComponent = () => {
                                     <div className={styles.review__card}>
                                         <div className={styles.flex}>
                                             <img
-                                                className='bg-contain'
+                                                className='bg-contain z-10'
                                                 src="https://asset.kompas.com/crops/qvQGS1vgF8FY7k9ylFHkmPd5l-Q=/0x0:0x0/750x500/data/photo/buku/61d440096969e.jpg" alt="" />
-                                            <p className='text-black font-semibold pl-3'>{review.nama}</p>
+                                            <p className='text-black font-semibold pl-3 z-10'>{review.nama}</p>
                                         </div>
                                         <div className={`${styles.review__text}`}>
                                             <p className='font-semibold pt-3'>{review.produk}</p>
@@ -32,6 +32,13 @@ export const ReviewComponent = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <Image
+                                className={styles.abs}
+                                src="./component/oval__yellow.svg"
+                                width={90}
+                                height={90}
+                                alt='fal'
+                                />
                             </Card>
                         </>
                     )

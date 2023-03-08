@@ -7,27 +7,38 @@ import { useState } from 'react';
 import { BiHeart, BiShoppingBag } from "react-icons/bi";
 import { useSession } from 'next-auth/react';
 import { CartItem } from './cartItem';
+import { FavoriteMenu } from './favoriteMenu';
 export const Navbar = () => {
-  
+
     const { data: session } = useSession();
     const [visible, setVisible] = useState(false);
     const [showing, setShowing] = useState(false);
+    const [favorite, setFavorite] = useState(false);
 
+    const [favShowing, favMenu] = useState(false);
     const [cartVisible, setCartMenu] = useState(false);
     const [cartShowing, setCardMenu] = useState(false);
-    const toggleCart = () =>{
+
+    const toggleFavorite = () => {
+        favMenu(!favShowing);
+        setCardMenu(true);
+        setTimeout(() => {
+            setCardMenu(false);
+        }, 3000);
+    }
+    const toggleCart = () => {
         setCartMenu(!cartVisible);
         setCardMenu(true);
         setTimeout(() => {
             setCardMenu(false);
-        }, 3000); 
+        }, 3000);
     }
     const toggleMenu = () => {
         setVisible(!visible);
         setShowing(true);
         setTimeout(() => {
             setShowing(false);
-        }, 3000); 
+        }, 3000);
     }
     return (
         <nav className={styles.nav}>
@@ -42,9 +53,13 @@ export const Navbar = () => {
                 <div className={styles.nav__right}>
                     <ul className={styles.nav__right__container}>
                         <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
-                            <Link href="/">
+                            <button className={styles.spanContainer}  onClick={toggleFavorite}>
                                 <BiHeart />
-                            </Link>
+                                <span className={styles.span_itemLove}>1</span>
+                            </button>
+                            {
+                                favShowing && <FavoriteMenu/>
+                            }
                         </li>
                         <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
                             <button type='button' onClick={toggleCart}>
@@ -79,7 +94,7 @@ export const Navbar = () => {
                             }
                         </li>
                         {
-                            visible && <UserMenu session={session}/>
+                            visible && <UserMenu session={session} />
                         }
                     </ul>
                 </div>

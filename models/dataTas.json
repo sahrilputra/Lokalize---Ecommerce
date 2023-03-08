@@ -1,95 +1,94 @@
-{ 
-    "tas" : [
-        {
-            "id": 1,
-            "name": "Tas Ransel",
-            "description": "Tas ransel dengan bahan yang kuat dan nyaman digunakan",
-            "price": 150000,
-            "color": "Abu-abu",
-            "size": "Large",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
+{ "tas" : [
+    {
+        "id": 1,
+        "name": "Tas Ransel",
+        "description": "Tas ransel dengan bahan yang kuat dan nyaman digunakan",
+        "price": 150000,
+        "color": "Abu-abu",
+        "size": "Large",
+        "image_url": "https://s2.bukalapak.com/img/2164542261/w-1000/Wenjie_Tas_Ransel_Canvas_Retro.jpg"
 
-        },
-        {
-            "id": 2,
-            "name": "Tas Messenger",
-            "description": "Tas messenger dengan bahan kulit yang berkualitas",
-            "price": 300000,
-            "color": "Coklat",
-            "size": "Medium",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Tas Selempang",
-            "description": "Tas selempang dengan bahan kanvas yang ringan",
-            "price": 75000,
-            "color": "Biru",
-            "size": "Small",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 4,
-            "name": "Tas Tote Bag",
-            "description": "Tas tote bag dengan bahan kanvas yang kuat",
-            "price": 90000,
-            "color": "Putih",
-            "size": "Medium",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 5,
-            "name": "Tas Laptop",
-            "description": "Tas laptop dengan bahan anti air",
-            "price": 200000,
-            "color": "Hitam",
-            "size": "Large",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 6,
-            "name": "Tas Duffel",
-            "description": "Tas duffel dengan bahan nylon yang tahan air",
-            "price": 250000,
-            "color": "Merah",
-            "size": "Large",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 7,
-            "name": "Tas Clutch",
-            "description": "Tas clutch dengan bahan kulit sintetis",
-            "price": 100000,
-            "color": "Emas",
-            "size": "Small",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 8,
-            "name": "Tas Hobo",
-            "description": "Tas hobo dengan bahan suede yang halus",
-            "price": 180000,
-            "color": "Hijau",
-            "size": "Medium",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 9,
-            "name": "Tas Tali Pinggang",
-            "description": "Tas tali pinggang dengan bahan kulit asli",
-            "price": 120000,
-            "color": "Coklat",
-            "size": "Small",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        },
-        {
-            "id": 10,
-            "name": "Tas Sling",
-            "description": "Tas sling dengan bahan denim yang trendy",
-            "price": 80000,
-            "color": "Biru",
-            "size": "Medium",
-            "image_url": "https://example.com/images/keranjang_rotan.jpg"
-        }
-    ]
+    },
+    {
+        "id": 2,
+        "name": "Tas Messenger",
+        "description": "Tas messenger dengan bahan kulit yang berkualitas",
+        "price": 300000,
+        "color": "Coklat",
+        "size": "Medium",
+        "image_url": "https://th.bing.com/th/id/OIP.mgwTAsm5Owr8Bo6j-oTWlAHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "id": 3,
+        "name": "Tas Selempang",
+        "description": "Tas selempang dengan bahan kanvas yang ringan",
+        "price": 75000,
+        "color": "Biru",
+        "size": "Small",
+        "image_url": "https://i.pinimg.com/originals/42/2b/3a/422b3a58024abbc4751935ef084ce70a.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tas Tote Bag",
+        "description": "Tas tote bag dengan bahan kanvas yang kuat",
+        "price": 90000,
+        "color": "Putih",
+        "size": "Medium",
+        "image_url": "https://i1.wp.com/indoblacu.com/wp-content/uploads/2020/06/tas-blacu.jpg?resize=1024,1024"
+    },
+    {
+        "id": 5,
+        "name": "Tas Laptop",
+        "description": "Tas laptop dengan bahan anti air",
+        "price": 200000,
+        "color": "Hitam",
+        "size": "Large",
+        "image_url": "https://s3.bukalapak.com/img/3469572152/w-1000/Tas_Laptop_14_inch_Tas_Laptop_Selempang_Jinjing_Wanita.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Tas Duffel",
+        "description": "Tas duffel dengan bahan nylon yang tahan air",
+        "price": 250000,
+        "color": "Merah",
+        "size": "Large",
+        "image_url": "https://th.bing.com/th/id/OIP.ZR1LYygMvzvVAimflgQaMAHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "id": 7,
+        "name": "Tas Clutch",
+        "description": "Tas clutch dengan bahan kulit sintetis",
+        "price": 100000,
+        "color": "Emas",
+        "size": "Small",
+        "image_url": "https://ds393qgzrxwzn.cloudfront.net/resize/m400x400/cat1/img/images/0/kMVvdIwtDk.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Tas Hobo",
+        "description": "Tas hobo dengan bahan suede yang halus",
+        "price": 180000,
+        "color": "Hijau",
+        "size": "Medium",
+        "image_url": "https://imgx.parapuan.co/crop/0x0:0x0/x/photo/2022/02/21/rekomendasi-hobo-bag-gabinojp-20220221025303.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tas Tali Pinggang",
+        "description": "Tas tali pinggang dengan bahan kulit asli",
+        "price": 120000,
+        "color": "Denim",
+        "size": "Small",
+        "image_url": "https://th.bing.com/th/id/OIP.RbKgQBmy7A79f6WOAoZYBwAAAA?pid=ImgDet&w=340&h=340&rs=1"
+    },
+    {
+        "id": 10,
+        "name": "Tas Sling",
+        "description": "Tas sling dengan bahan denim yang trendy",
+        "price": 80000,
+        "color": "Biru",
+        "size": "Medium",
+        "image_url": "https://cf.shopee.co.id/file/4749e02f6fd95f8937cac5fdbd557aea"
+    }
+]
 }

@@ -29,7 +29,7 @@ export const DisplayProduct = () => {
                                     alt="Image Component"
                                 />
                                 <div className={styles.product__card__title}>
-                                    <h3 className={styles.product__card__heading}>NAME</h3>
+                                    <h3 className={styles.product__card__heading}>Tas Batik</h3>
                                     <p className={styles.product__card__description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
                                     <p className={styles.product__card__money}>Rp. 24.000</p>
                                 </div>
@@ -37,13 +37,13 @@ export const DisplayProduct = () => {
                             <div className={styles.product__card__image}>
                                 <Image
                                     className={styles.product__display}
-                                    src="/product/display1.png"
-                                    width={280}
-                                    height={280}
+                                    src="/product/bagOne.png"
+                                    width={240}
+                                    height={240}
                                     alt="Image Component"
                                 />
                                 <div className={styles.product__card__title}>
-                                    <h3 className={styles.product__card__heading}>NAME</h3>
+                                    <h3 className={styles.product__card__heading}>Tas Motif</h3>
                                     <p className={styles.product__card__description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi?</p>
                                     <p className={styles.product__card__money}>Rp. 24.000</p>
                                 </div>
@@ -61,37 +61,6 @@ export const DisplayProduct = () => {
                         <PrimaryButton className type="primary Button" text={"Explore market"} routes={"/market"}/>
                     </div>
                     <ProductSlide />
-                    {/* <div className={styles.product__content__display}>
-                        
-                        <div className={styles.product__content__img}>
-                            <Image
-                                className={styles.product__content__product}
-                                src="/product/display1.png"
-                                width={100}
-                                height={100}
-                                alt="Image Component"
-                            />
-                        </div>
-                        <div className={styles.product__content__img}>
-                            <Image
-                                className={styles.product__content__product}
-                                src="/product/display1.png"
-                                width={100}
-                                height={100}
-                                alt="Image Component"
-                            />
-                        </div>
-                        <div className={styles.product__content__img}>
-                            <Image
-                                className={styles.product__content__product}
-                                src="/product/display1.png"
-                                width={100}
-                                height={100}
-                                alt="Image Component"
-                            />
-                        </div>
-
-                    </div> */}
                 </div>
             </div>
         </div>

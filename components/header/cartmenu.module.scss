@@ -24,7 +24,67 @@
     filter: drop-shadow(-17px 33px 57px rgba(0, 0, 0, 0.25));
     overflow: auto;
     position: absolute;
-    right: 160px;
+    right: -120px;
+    background: $bg-color;
+    z-index: 99 !important;
+    top: 70px;
+    width: 320px;
+    height: 80vh;
+    text-align: center;
+    border-radius: 22px;
+    padding: 10px;
+    padding-top: 12px;
+    margin: auto;
+
+    &__profile {
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        :hover {
+            background: #eeee;
+        }
+    }
+
+    li {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 44px;
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 1.5px solid #dedede70;
+    }
+}
+
+.favMenu {
+    filter: drop-shadow(-17px 33px 57px rgba(0, 0, 0, 0.25));
+    overflow: auto;
+    position: absolute;
+    right: -120px;
     background: $bg-color;
     z-index: 99 !important;
     top: 70px;
@@ -138,6 +198,18 @@
 @media (max-width:900px) {
 
     .cartMenu {
-        right: 0;
+        margin: auto;
+    }
+    .favMenu{
+        margin: auto;
+    }
+}
+@media (max-width:420px) {
+
+    .cartMenu {
+        right: -79px;
+    }
+    .favMenu{
+        right: -79px;
     }
 }
