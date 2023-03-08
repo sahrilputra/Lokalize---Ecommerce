@@ -74,7 +74,7 @@ export const CardComponent = () => {
                       </h3>
                       {
                             visible && <QuickView data={tas}/>
-                       }
+                      }
                         <div className={styles.market__card__param}>
                           <p className={styles.market__card__description}>
                             {tas.description}

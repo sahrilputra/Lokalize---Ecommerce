@@ -6,14 +6,22 @@ import { UserMenu } from './UserMenu';
 import { useState } from 'react';
 import { BiHeart, BiShoppingBag } from "react-icons/bi";
 import { useSession } from 'next-auth/react';
-
-
+import { CartItem } from './cartItem';
 export const Navbar = () => {
   
     const { data: session } = useSession();
     const [visible, setVisible] = useState(false);
     const [showing, setShowing] = useState(false);
 
+    const [cartVisible, setCartMenu] = useState(false);
+    const [cartShowing, setCardMenu] = useState(false);
+    const toggleCart = () =>{
+        setCartMenu(!cartVisible);
+        setCardMenu(true);
+        setTimeout(() => {
+            setCardMenu(false);
+        }, 3000); 
+    }
     const toggleMenu = () => {
         setVisible(!visible);
         setShowing(true);
@@ -39,10 +47,13 @@ export const Navbar = () => {
                             </Link>
                         </li>
                         <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
-                            <Link href="/">
+                            <button type='button' onClick={toggleCart}>
                                 <BiShoppingBag />
-                            </Link>
+                            </button>
 
+                            {
+                                cartVisible && <CartItem />
+                            }
                         </li>
                         <li className={`${styles.nav__right__li} ${styles.nav__profile}`} tabIndex={0}
                             onClick={toggleMenu}
