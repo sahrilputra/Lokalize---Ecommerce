@@ -6,6 +6,7 @@ import styles from './modal.module.scss'
 export const QuickView = ({ data }) => {
 
     const [visible, setVisible] = useState(true);
+    const [showing, setShowing] = useState(false);
     const toggleMenu = () => {
         setVisible(!visible);
         setShowing(true);
