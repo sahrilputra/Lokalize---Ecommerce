@@ -14,12 +14,6 @@ export const UserMenu = ({ session }) => {
                         <>
                             <div className={styles.menu__profile}>
                             <img className={styles.profileMenus} src={session.user.image} alt="user icon" />
-                                {/* <Image
-                                    src="/img_hero.png"
-                                    className={styles.avatar}
-                                    alt='avatar'
-                                    width={80}
-                                    height={80} /> */}
                             </div><h1>Hello <span>{session.user.name}</span>,</h1>
                         </>
                     ) : (

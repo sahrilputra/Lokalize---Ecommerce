@@ -1,0 +1,32 @@
+{
+    "review": [
+        {
+            "id": 1,
+            "nama":"Cece",
+            "produk": "Tas Batik",
+            "deskripsi": "Tas handcraft dengan motif batik tradisional yang sangat indah dan unik",
+            "rating": 4.5
+        },
+        {
+            "id": 2,
+            "nama": "Patrisia",
+            "produk": "Tas Rajut",
+            "deskripsi": "Tas handcraft rajut dengan pola geometris modern yang menarik",
+            "rating": 4.0
+        },
+        {
+            "id": 3,
+            "nama": "Stepanus",
+            "produk": "Baju Tenun",
+            "deskripsi": "Baju dengan tenunan tangan yang indah dan kualitas bahan yang tinggi",
+            "rating": 4.5
+          },
+          {
+            "id": 4,
+            "nama": "Galuh",
+            "produk": "Baju Kematian",
+            "deskripsi": "Baju kematian yang rumit, cocok untuk saya",
+            "rating": 4.0
+          }
+    ]
+}
