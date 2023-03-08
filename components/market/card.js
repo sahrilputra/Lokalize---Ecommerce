@@ -6,6 +6,7 @@ import data from '../../models/data'
 import { Modal, Card } from 'flowbite-react';
 import { QuickView } from './quickView';
 import { useState } from 'react';
+import { Link } from 'react-daisyui';
 export const CardComponent = () => {
   console.log(data);
   const item = data.item;
@@ -65,13 +66,14 @@ export const CardComponent = () => {
             {item.map((tas) => {
               return (
                 <>
+                <Link href='/detail'>
                   <div className={styles.item}>
                     <img className={styles.imgContainer} src={`${tas.image_url}`} alt="" />
                     <div className={styles.item_text}>
                       <div className={styles.item_icon}>
                         <HiOutlineHeart className={styles.heartIcon} />
                       </div>
-                      <h3 className={styles.card__title} onClick={toggleMenu}>
+                      <h3 className={styles.card__title}>
                         {tas.name}
                       </h3>
                       <div className={styles.item_param}>
@@ -87,6 +89,7 @@ export const CardComponent = () => {
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </>
               )
             })}

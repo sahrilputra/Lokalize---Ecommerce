@@ -74,7 +74,7 @@ const index = ({ providers }) => {
                                                 placeholder="Password"
                                                 onChange={handleChange}
                                             />
-                                            <ButtonIconArrow type={"button"} text={"Masuk"} icon={HiHome} />
+                                            <ButtonIconArrow type={"button"} text={"Masuk"} icon={HiHome} routes={"/"} />
                                             <div className={styles.forgot}>
                                                 <Link href="/forget">Forgot Pasword ?</Link>
                                             </div>

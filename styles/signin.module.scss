@@ -169,3 +169,17 @@
     border: 1px solid #66666683;
     cursor: pointer;
 }
+
+
+//responsive
+@media (max-width:830px) {
+
+}
+
+@media (max-width:665px) {
+    .container{
+        top: 150px;
+    }
+}
+
+@media (max-width:480px) {}
