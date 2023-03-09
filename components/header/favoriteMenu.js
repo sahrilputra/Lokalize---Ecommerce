@@ -11,7 +11,6 @@ export const FavoriteMenu = ({ favoriteItem }) => {
     console.log(favoriteItem);
     return (
         <>
-            <p><BiDownArrow /></p>
             <div className={styles.favMenu} id='menus'>
                 <h1 className='text-left'>Favorite</h1>
 

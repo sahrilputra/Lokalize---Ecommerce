@@ -139,16 +139,15 @@
    
 }
 .heartIcon{
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
     margin: 14px;
     font-size: 20px;
-    &:active{
-        background: #fff;
-    }
-    &:hover{
-        color: aqua;
+    &:active, &:focus{
+        fill: $secondary-focus;
+        outline: none;
     }
 }
 .card__title{

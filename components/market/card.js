@@ -10,8 +10,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import 'animate.css';
 export const CardComponent = () => {
-  console.log(data);
-  const item = data.item;
   const [noFil, setNone] = useState();
   const [category, setCategory] = useState('all'); // default category
   const [visible, setVisible] = useState(false);
@@ -20,8 +18,8 @@ export const CardComponent = () => {
 
   const handlerFavorite = (item)=>{
     setFavorite([...favorite, item]);
-  }
 
+  }
   const handlerFilter = (selectedCategory) => {
     setCategory(selectedCategory);
   }
@@ -104,7 +102,6 @@ export const CardComponent = () => {
                       </div>
                     </div>
                   </div>
-                 
                 </>
               )
             })}

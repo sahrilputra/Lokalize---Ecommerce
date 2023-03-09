@@ -29,7 +29,6 @@ export const CartItem = () => {
 
     return (
         <>
-            <p><BiDownArrow /></p>
             <div className={styles.cartMenu} id='menus'>
                 <h1 className='text-left'>Keranjang saya</h1>
 
