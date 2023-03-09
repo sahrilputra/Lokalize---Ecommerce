@@ -7,6 +7,7 @@
             "price": 100000,
             "color": "Putih",
             "size": "M",
+            "category": "baju, all", 
             "image_url": "https://s4.bukalapak.com/img/9779289022/w-1000/Kemeja_Pilot_Putih_Lengan_Pendek.jpg"
         },
         {
@@ -16,6 +17,7 @@
             "price": 50000,
             "color": "Hitam",
             "size": "L",
+            "category": "baju",
             "image_url": "https://th.bing.com/th/id/OIP.fnAshVv5wxbMSw328ii20QAAAA?pid=ImgDet&rs=1"
         },
         {
@@ -25,6 +27,7 @@
             "price": 80000,
             "color": "Putih",
             "size": "S",
+            "category": "baju",
             "image_url": "https://s3.bukalapak.com/img/327629374/w-1000/blus_putih_wanita_untuk_kerja___blus_wanita_warna_putih_baju.png"
         },
         {
@@ -34,6 +37,7 @@
             "price": 150000,
             "color": "Abu-abu",
             "size": "XL",
+            "category": "baju",
             "image_url": "https://th.bing.com/th/id/OIP.d_J-ylVeyjruMCi0QA891QHaJo?pid=ImgDet&rs=1"
         },
         {
@@ -43,86 +47,97 @@
             "price": 120000,
             "color": "Biru",
             "size": "M",
+            "category": "baju",
             "image_url": "https://th.bing.com/th/id/R.80869c7619bd9e8d5577710a31aeced7?rik=fcsOg73bQCNYEA&riu=http%3a%2f%2fwww.dececco.net%2fweb%2fwp-content%2fuploads%2f2016%2f04%2fCH3A-768x768.jpg&ehk=oBzHlD0DRB3HE4x0TvTAU%2bdbNfq3Yvqd5oRVpSyoBrw%3d&risl=&pid=ImgRaw&r=0"
         },
         {
-            "id": 1,
+            "id": 6,
             "name": "Tas Ransel",
             "description": "Tas ransel dengan bahan yang kuat dan nyaman digunakan",
             "price": 150000,
             "color": "Abu-abu",
-            "size": "Large",
+            "category": "tas",
+            "size": "L",
             "image_url": "https://s2.bukalapak.com/img/2164542261/w-1000/Wenjie_Tas_Ransel_Canvas_Retro.jpg"
         },
         {
-            "id": 2,
+            "id": 7,
             "name": "Tas Messenger",
             "description": "Tas messenger dengan bahan kulit yang berkualitas",
             "price": 300000,
             "color": "Coklat",
-            "size": "Medium",
+            "size": "M",
+            "category": "tas",
             "image_url": "https://th.bing.com/th/id/OIP.mgwTAsm5Owr8Bo6j-oTWlAHaHa?pid=ImgDet&rs=1"
         },
         {
-            "id": 3,
+            "id": 8,
             "name": "Tas Selempang",
             "description": "Tas selempang dengan bahan kanvas yang ringan",
             "price": 75000,
             "color": "Biru",
-            "size": "Small",
+            "size": "S",
+            "category": "tas",
             "image_url": "https://i.pinimg.com/originals/42/2b/3a/422b3a58024abbc4751935ef084ce70a.jpg"
         },
         {
-            "id": 4,
+            "id": 9,
             "name": "Tas Tote Bag",
             "description": "Tas tote bag dengan bahan kanvas yang kuat",
             "price": 90000,
             "color": "Putih",
-            "size": "Medium",
+            "size": "M",
+            "category": "tas",
             "image_url": "https://i1.wp.com/indoblacu.com/wp-content/uploads/2020/06/tas-blacu.jpg?resize=1024,1024"
         },
         {
-            "id": 5,
+            "id": 10,
             "name": "Tas Laptop",
             "description": "Tas laptop dengan bahan anti air",
             "price": 200000,
             "color": "Hitam",
-            "size": "Large",
+            "size": "L",
+            "category": "tas",
             "image_url": "https://s3.bukalapak.com/img/3469572152/w-1000/Tas_Laptop_14_inch_Tas_Laptop_Selempang_Jinjing_Wanita.jpg"
         },
         {
-            "id": 1,
+            "id": 11,
             "name": "Bunga Mawar Merah",
             "description": "Bunga mawar merah segar yang bisa dijadikan hiasan di dalam rumah.",
             "price": 15000,
+            "category": "dekorasi",
             "image_url": "https://th.bing.com/th/id/OIP.LU-iRv5CDcvSHCPczntfLAHaHZ?pid=ImgDet&rs=1"
         },
         {
-            "id": 2,
+            "id": 12,
             "name": "Lampion Kertas",
             "description": "Lampion kertas dengan berbagai warna yang cocok untuk dekorasi di dalam ruangan.",
             "price": 25000,
+            "category": "dekorasi",
             "image_url": "https://cf.shopee.co.id/file/75e076d7fc80ec0dfcba150f58174910"
         },
         {
-            "id": 3,
+            "id": 13,
             "name": "Topiari Buah",
             "description": "Topiari buah yang terbuat dari buah-buahan segar dan cantik sebagai hiasan meja.",
             "price": 35000,
+            "category": "dekorasi",
             "image_url": "https://1.bp.blogspot.com/-Wq9SpeqH2wA/UsYwr8S0kyI/AAAAAAAAEnM/iubpQwWNelA/s1600/topiary+sunkist.jpg"
         },
         {
-            "id": 4,
+            "id": 14,
             "name": "Lukisan Kanvas",
             "description": "Lukisan kanvas dengan berbagai jenis gambar yang bisa ditempelkan di dinding.",
             "price": 50000,
+            "category": "dekorasi",
             "image_url": "https://c.kaskus.id/kaskus_forum_image/p4kzno_1519352292.459_.jpg"
         },
         {
-            "id": 5,
+            "id": 15,
             "name": "Gantungan Kunci Kucing",
             "description": "Gantungan kunci lucu dengan bentuk kucing yang bisa dijadikan hiasan kunci atau tas.",
             "price": 10000,
+            "category": "dekorasi",
             "image_url": "https://th.bing.com/th/id/OIP.6WUyljYW3N7yFL1OAamozgHaHa?pid=ImgDet&rs=1"
         }
     ]

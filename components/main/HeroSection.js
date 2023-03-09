@@ -1,6 +1,7 @@
 import styles from '../main/styles.module.scss';
 import Image from 'next/image';
 import { ButtonIconArrow } from '../buttons';
+import 'animate.css';
 export const HeroSection = () => {
   return (
     <>
@@ -24,7 +25,7 @@ export const HeroSection = () => {
                 Craft
                 </span> it</h2>
               <div className={styles.hero__textDescription}>
-                <p className={styles.hero__desc}>
+                <p className={`animate__animated animate__bounce ${styles.hero__desc}` }>
                 Tuangkan imajinasi anda menjadi produk inovatif bersama lokalize
                 </p>
                 <ButtonIconArrow type="button" text={"Mulai"} routes={"/market"}/>

@@ -6,7 +6,9 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { PrimaryButton } from '../buttons';
 
-export const FavoriteMenu = () => {
+export const FavoriteMenu = ({ favoriteItem }) => {
+
+    console.log(favoriteItem);
     return (
         <>
             <p><BiDownArrow /></p>
