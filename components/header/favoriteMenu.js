@@ -14,27 +14,34 @@ export const FavoriteMenu = ({ favoriteItem }) => {
             <div className={styles.favMenu} id='menus'>
                 <h1 className='text-left'>Favorite</h1>
 
-                <div className={styles.grid}>
-                    <div className={styles.imgContainer}>
-                        <Image
-                            src="/img_hero.png"
-                            alt="cart image"
-                            width={120}
-                            height={120}
-                        />
+                {favoriteItem && favoriteItem.length > 0 ?
+                    (
+                        favoriteItem.map((item) => {
+                            return (
+                                <>
+                                    <div key={item.id} className={styles.grid}>
+                                        <div className={styles.imgContainer}>
+                                            <img className={styles.imgContainer} src={`${item.image_url}`} alt="item image" />
 
-                    </div>
+                                        </div>
+                                        <div className={styles.flex}>
+                                            <p>{item.name}</p>
+                                            <p className='font-light'>{item.color}</p>
+                                            <span className={` flex flex-row mt-3 justify-between`}>
+                                                <button className=' bg-slate-300 p-2 rounded-lg font-light '>Add to Cart</button>
+                                            </span>
+                                            <BiTrash className={styles.trashIcon} />
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        })
+                    ) : (
+                        <h1>Kosong</h1>
+                    )
 
-                    <div className={styles.flex}>
-                        <p>Name Product</p>
-                        <p className='font-light'>Motif Kembang Rupa</p>
-                        <span className={` flex flex-row mt-3 justify-between`}>
-                            <button className=' bg-slate-300 p-2 rounded-lg font-light '>Add to Cart</button>
-                        </span>
-                        <BiTrash className={styles.trashIcon} />
-                    </div>
+                }
 
-                </div>
 
             </div>
         </>
