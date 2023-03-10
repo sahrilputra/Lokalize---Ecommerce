@@ -1,15 +1,18 @@
 import styles from '../market/styles.module.scss';
 import Image from 'next/image';
-import { HiOutlineHeart, HiOutlineShoppingCart } from "react-icons/hi"
+import { HiOutlineHeart, HiOutlineShoppingCart, HiHeart } from "react-icons/hi"
 import { FaSearch } from 'react-icons/fa';
 import data from '../../models/data'
 import { Modal, Card } from 'flowbite-react';
 import { QuickView } from './quickView';
 import { FavoriteMenu } from '../header/favoriteMenu';
-import { useState } from 'react';
+import { useState, createContext, useContext } from 'react';
 import Link from 'next/link';
-
 import 'animate.css';
+import useLikedItems from './usedLikeItem';
+
+const LikedItemsContext = createContext();
+
 
 export const CardComponent = () => {
 
@@ -40,7 +43,8 @@ export const CardComponent = () => {
   const [showing, setShowing] = useState(false);
   const [favorite, setFavorite] = useState([]);
   const [menuHidden, setMenuHidden] = useState(false);
-
+  const [likeItem, setLiked] = useState([]);
+  const [fillFavorite, setFill] = useState(false);
 
   const handlerFavorite = (item) => {
     setFavorite([...favorite, item]);
@@ -57,6 +61,19 @@ export const CardComponent = () => {
     setTimeout(() => {
       setShowing(false);
     }, 3000);
+  }
+// ========== favorite 
+const handleLikedItem = (item) => {
+  if (likeItem.includes(item)) {
+    setLiked(likeItem.filter((id) => id !== item));
+    setFill(!fillFavorite);
+  } else {
+    setLiked([...likeItem, item]);
+  }
+}
+
+  const clickFavorite = () => {
+    
   }
   return (
     <>
@@ -111,6 +128,8 @@ export const CardComponent = () => {
 
           <div className={styles.market__card}>
             {filteredItems.map((tas) => {
+            const isLiked = likeItem.includes(tas.id);
+             
               return (
                 <>
                   <div className={styles.item} key={tas.id}>
@@ -131,7 +150,12 @@ export const CardComponent = () => {
 
                     <div className={styles.item_text}>
                       <div className={styles.item_icon}>
-                        <HiOutlineHeart className={styles.heartIcon} onClick={() => handlerFavorite(tas)} />
+                        {isLiked ? (
+                          <HiHeart className={`${styles.likedIcon} animate__animated animate__tada`} onClick={() => handleLikedItem(tas.id)} />
+                          ) : (
+                          <HiOutlineHeart className={`${styles.heartIcon}`} onClick={() => handleLikedItem(tas.id)}/>
+                        )
+                        }
                       </div>
                       <Link href='/detail'>
                         <h3 className={styles.card__title}>
@@ -151,12 +175,10 @@ export const CardComponent = () => {
                       </div>
                     </div>
                   </div>
-
                   {/* {
                   favorite.length > 0 && <FavoriteMenu favoriteItem={favorite} className="hidden"/>
                   } */}
                 </>
-
               )
             })}
           </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Fragment } from 'react';
 import { Card } from 'flowbite-react'
 import { useState } from 'react';
@@ -6,9 +7,28 @@ import styles from './modal.module.scss'
 import Link from 'next/link';
 import { Dialog, Transition } from '@headlessui/react';
 import { BiX, BiHeart } from "react-icons/bi";
-import { BsFillHeartFill, BsHeart } from "react-icons/bs";
+import { HiOutlineHeart, HiOutlineShoppingCart, HiHeart } from "react-icons/hi"
+import useLikedItems from './usedLikeItem';
+
 export const QuickView = ({ open, onClose, title, image, description }) => {
+
+    const { likedItem } = useLikedItems
+    console.log(likedItem);
+
+    const [likeItem, setLiked] = useState([]);
+    const [fillFavorite, setFill] = useState(false);
+
+    const handleLikedItem = (item) => {
+        if (likeItem.includes(item)) {
+            setLiked(likeItem.filter((title) => title !== item));
+            setFill(!fillFavorite);
+        } else {
+            setLiked([...likeItem, item]);
+        }
+    }
+    const isLiked = likeItem.includes(title);
     return (
+        
         <Transition appear show={open} as={Fragment}>
             <Dialog
                 as="div"
@@ -50,9 +70,14 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
                             </button>
                             <div className="relative">
                                 <img src={image} alt="Gambar Modal" className="h-96 w-auto mx-auto" />
-                                <BsFillHeartFill className='absolute left-0 bottom-0 text-2xl cursor-pointer ml-8  
-                                outline-red-400 fill-slate-200 
-                                active:fill-red-500' />
+                                {isLiked ? (
+                                    <HiHeart className={`${styles.likedIcon} animate__animated animate__tada
+                                    absolute right-0 mr-6 bottom-2 text-3xl `} onClick={() => handleLikedItem(title)} />
+                                ) : (
+                                    <HiOutlineHeart className={`${styles.heartIcon}
+                                    absolute right-0 mr-6 bottom-2 text-3xl`} onClick={() => handleLikedItem(title)} />
+                                )
+                                }
                             </div>
                             <Dialog.Title as="h3" className="text-lg font-semibold leading-6 text-gray-900 ml-8 p-4 ">
                                 {title}

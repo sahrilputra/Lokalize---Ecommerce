@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@headlessui/react": "^1.7.13",
+    "@mui/material": "^5.11.12",
+    "@mui/styled-engine-sc": "^5.11.11",
     "@next-auth/mongodb-adapter": "^1.1.1",
     "@next/font": "13.1.6",
     "@react-icons/all-files": "^4.1.0",
@@ -27,7 +31,8 @@
     "react": "18.2.0",
     "react-daisyui": "^3.0.3",
     "react-dom": "18.2.0",
-    "react-icons": "^4.7.1"
+    "react-icons": "^4.7.1",
+    "styled-components": "^5.3.8"
   },
   "devDependencies": {
     "@reduxjs/toolkit": "^1.9.3",

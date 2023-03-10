@@ -145,10 +145,15 @@
     right: 0;
     margin: 14px;
     font-size: 20px;
-    &:active, &:focus{
-        fill: $secondary-focus;
-        outline: none;
-    }
+}
+.likedIcon{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 14px;
+    font-size: 20px;
+    color: #e7739e;
 }
 .card__title{
     margin: 8px;
