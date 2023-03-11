@@ -175,7 +175,7 @@ export const CardComponent = () => {
                           {
 
                           }
-                          <HiOutlineShoppingCart className={`${styles.cartIcon} mb-3`} onClick={() => handleItemClick(tas)}/>
+                          <HiOutlineShoppingCart className={`${styles.cartIcon} mb-3 animate__animated animate__pulse `} onClick={() => handleItemClick(tas)}/>
                           {selectedItem && selectedItem.id === tas.id && (
                             <QuickView
                               open={true}
