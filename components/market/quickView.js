@@ -28,13 +28,14 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
         setharga(harga);
         setCount(count);
         setTotal(total);
-
     }
     function decrementCount() {
-        harga = harga - harga;
-        count = count - 1;
-        setharga(harga);
-        setCount(count);
+        if (count > 1) {
+            harga = harga - harga;
+            count = count - 1;
+            setharga(harga);
+            setCount(count);
+        }
     }
 
     // =========== size 
@@ -49,7 +50,11 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
     const [selectedSize, setSelectedSize] = useState(pageSizes[0]);
 
     const handleSizeChange = (value) => {
-        setSelectedSize(value);
+        if (selectedSize + value < 1) {
+            setSelectedSize(1);
+        } else {
+            setSelectedSize(selectedSize + value);
+        }
     };
 
     const [likeItem, setLiked] = useState([]);
@@ -68,10 +73,10 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
     const [activeButton, setActiveButton] = useState("");
     useEffect(() => {
         if (activeButton !== "") {
-          const timeout = setTimeout(() => setActiveButton(""), 2000);
-          return () => clearTimeout(timeout);
+            const timeout = setTimeout(() => setActiveButton(""), 2000);
+            return () => clearTimeout(timeout);
         }
-      }, [activeButton]);
+    }, [activeButton]);
 
 
     const isLiked = likeItem.includes(title);
@@ -216,13 +221,13 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
                                     </button>
 
                                     <Link href="/detail">
-                                    <button
-                                        onClick={() => setIsOpen(!isOpen)}
-                                        className="mr-4 px-4 py-2 font-medium text-white bg-blue-500 rounded-md"
-                                    >
-                                        <FiInfo className="inline-block mr-2" />
-                                        Detail
-                                    </button>
+                                        <button
+                                            onClick={() => setIsOpen(!isOpen)}
+                                            className="mr-4 px-4 py-2 font-medium text-white bg-blue-500 rounded-md"
+                                        >
+                                            <FiInfo className="inline-block mr-2" />
+                                            Detail
+                                        </button>
 
                                     </Link>
                                     <button

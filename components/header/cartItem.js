@@ -21,10 +21,12 @@ export const CartItem = () => {
 
     }
     function decrementCount() {
-        harga = harga - harga;
-        count = count - 1;
-        setharga(harga);
-        setCount(count);
+        if (count > 1) {
+            harga = harga - harga;
+            count = count - 1;
+            setharga(harga);
+            setCount(count);
+        }
     }
 
     return (
