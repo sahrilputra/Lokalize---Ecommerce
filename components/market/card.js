@@ -10,6 +10,7 @@ import { useState, createContext, useContext } from 'react';
 import Link from 'next/link';
 import 'animate.css';
 import useLikedItems from './usedLikeItem';
+import CartModal from './cartModal';
 
 const LikedItemsContext = createContext();
 
@@ -35,6 +36,17 @@ export const CardComponent = () => {
     setSelectedItem(null);
   };
 
+
+  // cartModal 
+
+  const [cartMenodal, setCartModal] = useState(false);
+  const toggleCart = () => {
+    setCartModal(!cartMenodal);
+    setCartModal(true);
+    setTimeout(() => {
+      setCartModal(false);
+    }, 3000);
+  }
   // ============
 
   const [noFil, setNone] = useState();
@@ -45,6 +57,7 @@ export const CardComponent = () => {
   const [menuHidden, setMenuHidden] = useState(false);
   const [likeItem, setLiked] = useState([]);
   const [fillFavorite, setFill] = useState(false);
+
 
   const handlerFavorite = (item) => {
     setFavorite([...favorite, item]);
@@ -62,18 +75,18 @@ export const CardComponent = () => {
       setShowing(false);
     }, 3000);
   }
-// ========== favorite 
-const handleLikedItem = (item) => {
-  if (likeItem.includes(item)) {
-    setLiked(likeItem.filter((id) => id !== item));
-    setFill(!fillFavorite);
-  } else {
-    setLiked([...likeItem, item]);
+  // ========== favorite 
+  const handleLikedItem = (item) => {
+    if (likeItem.includes(item)) {
+      setLiked(likeItem.filter((id) => id !== item));
+      setFill(!fillFavorite);
+    } else {
+      setLiked([...likeItem, item]);
+    }
   }
-}
 
   const clickFavorite = () => {
-    
+
   }
   return (
     <>
@@ -128,32 +141,22 @@ const handleLikedItem = (item) => {
 
           <div className={styles.market__card}>
             {filteredItems.map((tas) => {
-            const isLiked = likeItem.includes(tas.id);
-             
+              const isLiked = likeItem.includes(tas.id);
+
               return (
                 <>
                   <div className={styles.item} key={tas.id}>
                     <img className={styles.imgContainer}
                       src={`${tas.image_url}`}
                       alt="item image"
-                      onClick={() => handleItemClick(tas)}
                     />
-                    {selectedItem && selectedItem.id === tas.id && (
-                      <QuickView
-                        open={true}
-                        onClose={handleClose}
-                        title={selectedItem.name}
-                        image={selectedItem.image_url}
-                        description={selectedItem.description}
-                      />
-                    )}
 
                     <div className={styles.item_text}>
                       <div className={styles.item_icon}>
                         {isLiked ? (
                           <HiHeart className={`${styles.likedIcon} animate__animated animate__tada`} onClick={() => handleLikedItem(tas.id)} />
-                          ) : (
-                          <HiOutlineHeart className={`${styles.heartIcon}`} onClick={() => handleLikedItem(tas.id)}/>
+                        ) : (
+                          <HiOutlineHeart className={`${styles.heartIcon}`} onClick={() => handleLikedItem(tas.id)} />
                         )
                         }
                       </div>
@@ -169,7 +172,21 @@ const handleLikedItem = (item) => {
                       </div>
                       <div className={styles.itemBawah}>
                         <div className={styles.itemCartIcon}>
-                          <HiOutlineShoppingCart className={styles.cartIcon} />
+                          {
+
+                          }
+                          <HiOutlineShoppingCart className={`${styles.cartIcon} mb-3`} onClick={() => handleItemClick(tas)}/>
+                          {selectedItem && selectedItem.id === tas.id && (
+                            <QuickView
+                              open={true}
+                              onClose={handleClose}
+                              title={selectedItem.name}
+                              image={selectedItem.image_url}
+                              description={selectedItem.description}
+                              size={selectedItem.size}
+                            />
+                          )}
+                          {/* <CartModal /> */}
                         </div>
                         <h3 className={styles.prices}>Rp.{tas.price}</h3>
                       </div>
