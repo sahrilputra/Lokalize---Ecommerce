@@ -1,81 +1,105 @@
 .review {
-    font-family: 'poppins';
-    position: relative;
+    font-family: 'poppins', sans-serif;
 
-    &__card {
-        img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
+    width: 80%;
+    height: 100vh; // delete 
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+
+    &__head {
+        position: relative;
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            text-shadow: 8px 3px 0px rgba(167, 167, 167, 0.69);
+            line-height: 50px;
         }
     }
-}
 
-.Carousel{
-    text-align: center;
-    margin: auto;
-}
-.Card{
-    margin: auto;
-}
-
-.content__container{
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-.container{
-    margin-top: 10px;
-    position: relative;
-    z-index: -1;
-    .component{
+    &__tag {
         position: absolute;
-        top: -10px;
-        left: -50px;
-     }
-}
-.abs{
-    position: absolute;
-    top: -13px;
-    left: -10px;
-    overflow: hidden;
-}
-.flex {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-}
-
-
-.heading_review {
-    font-family: 'Poppins';
-    h1 {
-        font-weight: 600;
-        font-size: 80px;
-        text-shadow: 10px -8px 0px rgba(45, 45, 45, 0.208);
-        width: auto;
-        position: relative;
-    }
-
-    .absolute {
-        position: absolute;
-        margin: 0 auto;
-        font-size: 140px;
+        top: -40px;
+        font-size: 60px;
+        z-index: -1;
         font-weight: 700;
         color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: rgba(60, 60, 60, 0.556);
-        display: block;
-        fill: none;
-        overflow: hidden;
+        font-size: 40px;
+        -webkit-text-stroke: 1px black;
+    }
+    &__param{
+        margin-top: 22px;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.3fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    &__card1 {
+        width: 240px;
+        height: 280px;
+        padding: 12px;
+        background: #fff;
+        border: 1px solid #0000;
+        border-radius: 30px;
+        margin: 10px;
+        box-shadow: 10px 4px 65px 15px rgba(0, 0, 0, 0.25);
+        position: relative;
+    }
+    &__flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card2{
+        width: 240px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 0px 40px 40px 40px;
+        padding: 12px;
+        margin: 6px;
+        box-shadow: 10px 4px 65px 15px rgba(0, 0, 0, 0.25);
+        position: relative;
+    }
+    &__cardTitle{
+        font-weight: 600;
+        padding: 4px;
+        margin-bottom: 4px;
+    }
+    &__nama{
+        position: absolute;
+        font-weight: 600;
+        margin: 4px;
+        padding: 12px;
+        bottom: 0;
+        right: 20px;
+    }
+    &__cardReview{
+        padding: 4px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 960px) {
+    .review {
+    &__card1, &__card2{
+        width:180px ;
+        font-size: 14px;
 
     }
+    }
+    
+}
+
+
+@media (max-width: 760px) {
+    .review {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }

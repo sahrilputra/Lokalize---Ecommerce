@@ -8,43 +8,38 @@ export const ReviewComponent = () => {
     console.log(data);
     const item = data.review;
     return (
-        <div>
-            <div className={styles.heading_review}>
-                <h1>Review Mereka</h1>
-            </div>
-            <div className={styles.content__container}>
-                {item.map((review) => {
-                    return (
-                        <>
-                            <Card className={`max-w-sm m-auto ${styles.container}`}>
-                                <div className={`${styles.review}`}>
-                                    <div className={styles.review__card}>
-                                        <div className={styles.flex}>
-                                            <img
-                                                className='bg-contain z-10'
-                                                src="https://asset.kompas.com/crops/qvQGS1vgF8FY7k9ylFHkmPd5l-Q=/0x0:0x0/750x500/data/photo/buku/61d440096969e.jpg" alt="" />
-                                            <p className='text-black font-semibold pl-3 z-10'>{review.nama}</p>
-                                        </div>
-                                        <div className={`${styles.review__text}`}>
-                                            <p className='font-semibold pt-3'>{review.produk}</p>
-                                            <p className='font-light size pt-3 text-sm'>{review.deskripsi}</p>
-                                            <p className='text-right'>Rating : {review.rating}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <Image
-                                className={styles.abs}
-                                src="./component/oval__yellow.svg"
-                                width={90}
-                                height={90}
-                                alt='fal'
-                                />
-                            </Card>
-                        </>
-                    )
-                })}
-            </div>
-        </div>
+        <>
+            <div className={styles.review}>
 
+
+                <div className={styles.review__wrapper}>
+                    <div className={styles.review__head}>
+                        <h1>Kata Mereka</h1>
+                        <p className={styles.review__tag}>Review</p>
+                    </div>
+                    <p className={styles.review__param}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium aperiam sed nisi exercitationem ea numquam distinctio debitis itaque dignissimos.</p>
+                </div>
+
+                <div className={styles.review__container}>
+                    <div className={styles.review__card1}>
+                        <p className={styles.review__cardTitle}>Kualitas Terbaik</p>
+                        <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
+                        <p className={styles.review__nama}>Nama Orang</p>
+                    </div>
+                    <div className={styles.review__flex}>
+                        <div className={styles.review__card2}>
+                            <p className={styles.review__cardTitle}>Kualitas Terbaik</p>
+                            <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
+                            <p className={styles.review__nama}>Nama Orang</p>
+                        </div>
+                        <div className={styles.review__card2}>
+                            <p className={styles.review__cardTitle}>Kualitas Terbaik</p>
+                            <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
+                            <p className={styles.review__nama}>Nama Orang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
