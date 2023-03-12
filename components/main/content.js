@@ -5,6 +5,20 @@ export const Content = () => {
         <div>
             <div className={styles.content}>
                 <div className={styles.content__container}>
+{/* 
+                    <div className={styles.content__container_new}>
+                        <div className={styles.wrap}>
+                        <img src="../../lokalizeBg.svg" 
+                        alt="" 
+                        className={styles.image_bg}
+                        />
+                        </div>
+                        <img src="../../Title.svg" 
+                        alt=""
+                        className={styles.image_title}
+                        />
+                    </div> */}
+
                     <div className={styles.content__svg}>
                         <Image
                             className={styles.content__img}

@@ -204,11 +204,10 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
 
     &__mainContainer {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 50px;
         padding: 20px;
         border-radius: 20px;
-
     }
 
     &__card {
@@ -325,6 +324,32 @@ $CUBIC_BEZIER: cubic-bezier(0.215, 0.610, 0.355, 0.215);
 
     }
 }
+
+.wrap {
+    width: 300px;
+    perspective: 442px;
+    position: relative;
+}
+
+.image_bg {
+    width: 100%;
+    transform: rotateX(38deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    border-radius: 12px;
+}
+
+.image_title {
+    width: 500px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 99;
+    text-shadow: -3px 6px 13px rgba(31, 31, 31, 1);
+}
+
+.content__container_new {
+    position: relative;
+}
+
 
 // Bounce In Down
 //--------------------------------//
