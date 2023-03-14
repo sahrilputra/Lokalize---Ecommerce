@@ -1,0 +1,120 @@
+.content {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 40px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: max-content;
+    &__logo {
+        margin: auto;
+        position: relative;
+        width: 320px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 7px );
+        -webkit-backdrop-filter: blur( 7px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    &__wrap {
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+
+    }
+    &__head {
+        font-size: 56px;
+        font-weight: 700;
+        text-shadow: 8px 3px 0px rgba(167, 167, 167, 0.69);
+        line-height: 50px;
+        text-align: right;
+    }
+    &__tag {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        font-size: 60px;
+        z-index: -1;
+        font-weight: 700;
+        color: transparent;
+        font-size: 40px;
+        -webkit-text-stroke: 1px black;
+    }
+    &__text{
+        padding: 8px;
+        margin-top:22px ;
+        text-align: right;
+    }
+
+    &__pop{
+        position: absolute;
+        width: 80px;
+        left: -40px;
+        top: -15px;
+        z-index: -1;
+    }
+
+    &__blob{
+        position: absolute;
+        left: -10px;
+        z-index: -1;
+        width: 180px;
+    }
+
+    &__circle{
+        position: absolute;
+        bottom: 10px;
+        z-index: -1;
+        right: -120px;
+        overflow: hidden;
+    }
+
+}
+
+
+// responsive 
+
+@media (max-width: 800px) {
+    .content{
+        width: 90%;
+        &__text{
+            font-size: 14px;
+
+        }
+    }
+    
+}
+
+
+@media (max-width: 640px) {
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+
+        &__blob{
+            top: 0;
+        }
+
+        &__wrap{
+            margin-top: 20px;
+        }
+    }
+    
+}
+
+@media (max-width: 460px) {
+    .content{
+       &__logo{
+        width:240px ;
+       }
+    }
+    
+}

@@ -4,6 +4,7 @@
     margin-top: 18px;
 
     &__content {
+        margin-top: 50px;
         display: grid;
         grid-template-columns: 1fr 0.6fr;
         margin: auto;
@@ -99,6 +100,7 @@
     .product {
         &__textContainer{
             h1{
+                line-height: 40px;
                 font-size: 40px;
             }
         }

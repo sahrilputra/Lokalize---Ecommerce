@@ -1,66 +1,33 @@
-import styles from '../main/styles.module.scss';
+/* eslint-disable @next/next/no-img-element */
+import styles from './content.module.scss'
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
 export const Content = () => {
     return (
-        <div>
-            <div className={styles.content}>
-                <div className={styles.content__container}>
-                    {/* 
-                    <div className={styles.content__container_new}>
-                        <div className={styles.wrap}>
-                        <img src="../../lokalizeBg.svg" 
-                        alt="" 
-                        className={styles.image_bg}
-                        />
-                        </div>
-                        <img src="../../Title.svg" 
-                        alt=""
-                        className={styles.image_title}
-                        />
-                    </div> */}
+        <div className={styles.content}>
+            <div className={styles.content__logo}>
+                <img src="../../icon.svg"
+                    alt="lokalize Logo"
+                    className={styles.content__lokalize} 
+                />
 
-                    <div className={styles.content__svg}>
-                        <Fade>
-                        <Image
-                            className={styles.content__img}
-                            src="/component/about.png"
-                            width={280}
-                            height={280}
-                            alt="Image Component"
-                        />
-                        </Fade>
-                    </div>
-
-                    <div className={styles.content__text}>
-                            <div className={styles.content__heading}>
-                                <h2 className={styles.content__absolute}>ABOUT</h2>
-                            </div>
-                        <div className={styles.content__param}>
-                            <Fade delay={200} cascade>
-                            <h1>Tentang Kami</h1>
-                            <p>
-                                Lokalize adalah platform yang menghubungkan penjual dan pembeli hasil kerajinan tangan dari UMKM yang berbasis di Indonesia. Lokalize dibuat untuk mempermudah para pedagang UMKM untuk memperluas jangkauan dagang dan memudahkan pembeli untuk membeli kerajinan dari suatu daerah tertentu.
-                                <br>
-                                </br>
-                                Produk kerajinan yang ditawarkan pun beragam, mulai dari berbagai macam tas, sandal, kain batik, dan masih banyak lagi. Produk tersebut dibuat dengan kekhasan daerah masing-masing dan dibuat dengan bahan yang berkualitas.
-                            </p>
-                            </Fade>
-                            <div className={styles.content__ciclreSvg}>
-                                <Image
-                                    className={styles.content__circle}
-                                    src="/component/circle.svg"
-                                    width={50}
-                                    height={50}
-                                    alt="circle Component"
-                                />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                <img src="../../popArt.svg" 
+                alt="popArts" 
+                className={styles.content__pop}
+                />
             </div>
 
+            <div className={styles.content__wrap}>
+                <h1 className={styles.content__head}>Tentang Kami</h1>
+                <p className={styles.content__tag}>LOKALIZE</p>
+                <p className={styles.content__text}>Lokalize adalah platform yang menghubungkan penjual dan pembeli hasil kerajinan tangan dari UMKM yang berbasis di Indonesia. Lokalize dibuat untuk mempermudah para pedagang UMKM untuk memperluas jangkauan dagang dan memudahkan pembeli untuk membeli kerajinan dari suatu daerah tertentu.
+                    Produk kerajinan yang ditawarkan pun beragam, mulai dari berbagai macam tas, sandal, kain batik, dan masih banyak lagi. Produk tersebut dibuat dengan kekhasan daerah masing-masing dan dibuat dengan bahan yang berkualitas.
+                </p>
+            </div>
+
+            <img src="../../blob.svg" alt="blob element" 
+            className={styles.content__blob}
+            />
         </div>
     )
 }

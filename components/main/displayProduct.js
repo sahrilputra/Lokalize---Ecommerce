@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './displayProduct.module.scss'
 import Image from 'next/image'
 import Link from 'next/link';
@@ -17,7 +18,9 @@ export const DisplayProduct = () => {
                         <h1>Lebih Modern & Stylish</h1>
                         <p className={styles.product__tag}>Product</p>
                         <p className={styles.product__text}>Tambahkan sentuhan modern dan stylish pada gaya Anda dengan produk handcraft buatan Lokalize. Dibuat dengan cinta oleh pengrajin lokal terbaik, produk kami menawarkan kesempatan untuk mengekspresikan kreativitas Anda dengan gaya yang unik dan eksklusif. Dukung industri kreatif lokal dan gunakan produk handcraft Lokalize untuk tampil beda!</p>
+                       <Link href={"/market"}>
                         <button className={styles.product__button}>Explore</button>
+                        </Link>
                     </div>
                     <CardEffectComponent className={styles.product__cardComponent} />
                 </div>
