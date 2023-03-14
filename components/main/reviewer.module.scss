@@ -42,7 +42,7 @@
 
 .review {
     font-family: 'poppins', sans-serif;
-
+    position: relative;
     width: 80%;
     height: 100vh; // delete 
     margin: auto;
@@ -113,7 +113,13 @@
         margin: 6px;
         box-shadow: 10px 4px 65px 15px rgba(0, 0, 0, 0.25);
         position: relative;
-
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12.7px);
+        -webkit-backdrop-filter: blur(12.7px);
+        border: 1px solid rgba(255, 255, 255, 0.28);
         @include animation(bouncebounce 0.9s 1.5s infinite ease-out alternate);
     }
 
@@ -132,7 +138,7 @@
         right: 20px;
     }
 
-    &__pict{
+    &__pict {
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -144,7 +150,8 @@
         right: 30px;
 
     }
-    &__rating{
+
+    &__rating {
         bottom: 40px;
         right: 66px;
         position: absolute;
@@ -158,6 +165,19 @@
     }
 }
 
+.contentReview{
+    position:relative;
+    width: max-content;
+}
+
+.imgAbsolute{
+    position: absolute;
+    bottom : 80px;
+    right: 0; 
+    width:200px;
+    height: 200px;
+    z-index: -1;
+}
 
 
 .review__card2 {}

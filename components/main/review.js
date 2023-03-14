@@ -8,7 +8,7 @@ export const ReviewComponent = () => {
     console.log(data);
     const item = data.review;
     return (
-        <>
+        <div classNmae={styles.contentReview}>
             <div className={styles.review}>
 
 
@@ -26,8 +26,8 @@ export const ReviewComponent = () => {
                         <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
                         <p className={styles.review__nama}>Nama Orang</p>
                         <div className={styles.review__pict}></div>
-                            <p className={styles.review__rating}>Rating 4.5</p>
-                            <p className={styles.review__nama}> Nama Orang</p>
+                        <p className={styles.review__rating}>Rating 4.5</p>
+                        <p className={styles.review__nama}> Nama Orang</p>
                     </div>
                     <div className={styles.review__flex}>
                         <div className={styles.review__card2}>
@@ -47,7 +47,9 @@ export const ReviewComponent = () => {
                         </div>
                     </div>
                 </div>
+            <img src="../../reviewPatter.svg" alt="" className={styles.imgAbsolute} />
             </div>
-        </>
+
+        </div>
     )
 }

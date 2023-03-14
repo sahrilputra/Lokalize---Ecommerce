@@ -33,11 +33,9 @@ export const Content = () => {
                     </div>
 
                     <div className={styles.content__text}>
-                        <Slide delay={100} direction='right'>
                             <div className={styles.content__heading}>
                                 <h2 className={styles.content__absolute}>ABOUT</h2>
                             </div>
-                        </Slide>
                         <div className={styles.content__param}>
                             <Fade delay={200} cascade>
                             <h1>Tentang Kami</h1>
