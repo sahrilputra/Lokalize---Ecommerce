@@ -24,30 +24,28 @@ export const ReviewComponent = () => {
                     <div className={styles.review__card1}>
                         <p className={styles.review__cardTitle}>Kualitas Terbaik</p>
                         <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
-                        <p className={styles.review__nama}>Nama Orang</p>
                         <div className={styles.review__pict}></div>
                         <p className={styles.review__rating}>Rating 4.5</p>
-                        <p className={styles.review__nama}> Nama Orang</p>
+                        <p className={styles.review__nama}> Stepanus</p>
                     </div>
                     <div className={styles.review__flex}>
                         <div className={styles.review__card2}>
                             <p className={styles.review__cardTitle}>Kualitas Terbaik</p>
                             <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
-                            <p className={styles.review__nama}>Nama Orang</p>
                             <div className={styles.review__pict}></div>
                             <p className={styles.review__rating}>Rating 4.5</p>
-                            <p className={styles.review__nama}> Nama Orang</p>
+                            <p className={styles.review__nama}> Cindy</p>
                         </div>
                         <div className={styles.review__card2}>
                             <p className={styles.review__cardTitle}>Kualitas Terbaik</p>
                             <p className={styles.review__cardReview}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis.</p>
                             <div className={styles.review__pict}></div>
                             <p className={styles.review__rating}>Rating 4.5</p>
-                            <p className={styles.review__nama}> Nama Orang</p>
+                            <p className={styles.review__nama}> Cece</p>
                         </div>
                     </div>
                 </div>
-            <img src="../../reviewPatter.svg" alt="" className={styles.imgAbsolute} />
+            <img src="../../smallBlury.svg" alt="" className={styles.imgAbsolute} />
             </div>
 
         </div>
