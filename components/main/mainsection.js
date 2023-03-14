@@ -11,7 +11,6 @@ export const Mainsection = () => {
   return (
     <>
     <HeroSection />
-    <Subscribe />
     <DisplayProduct/>
     <Content />
     {/* <SectionCustom/> */}

@@ -1,4 +1,4 @@
-import styles from '../main/styles.module.scss';
+import styles from './displayProduct.module.scss'
 import Image from 'next/image'
 import Link from 'next/link';
 import { Carousel } from 'flowbite-react';
@@ -9,31 +9,20 @@ import { Fade } from 'react-awesome-reveal';
 export const DisplayProduct = () => {
     return (
         <>
-         
 
-                <div id="content" className={styles.product}>
 
-                    <div className={styles.product__heading}>
-                        <h1>Boost your STYLE</h1>
+            <div className={styles.product}>
+                <div className={styles.product__content}>
+                    <div className={styles.product__textContainer}>
+                        <h1>Lebih Modern & Stylish</h1>
+                        <p className={styles.product__tag}>Product</p>
+                        <p className={styles.product__text}>Tambahkan sentuhan modern dan stylish pada gaya Anda dengan produk handcraft buatan Lokalize. Dibuat dengan cinta oleh pengrajin lokal terbaik, produk kami menawarkan kesempatan untuk mengekspresikan kreativitas Anda dengan gaya yang unik dan eksklusif. Dukung industri kreatif lokal dan gunakan produk handcraft Lokalize untuk tampil beda!</p>
+                        <button className={styles.product__button}>Explore</button>
                     </div>
-                    <div className={styles.product__absolute}>
-                        <h2>STYLE</h2>
-                    </div>
-                    <div className={styles.product__mainContainer}>
-                        <Fade duration={1000}>
-                        <CardEffectComponent className={styles.product__display} />
-                        <CardEffectComponent />
-                        </Fade>
-                        {/* <div className={styles.product__content}>
-                    <h3 className={styles.product__content__title}>Product Kami</h3>
-                    <p className={styles.product__content__param}>Jelajahi lebih dalam produk unggulan kami di lokalize</p>
-                    <div className={styles.product__content__button}>
-                        <PrimaryButton className type="primary Button" text={"Explore market"} routes={"/market"} />
-                    </div>
-                    <ProductSlide />
-                </div> */}
-                    </div>
+                    <CardEffectComponent className={styles.product__cardComponent} />
                 </div>
+                <img src="../../lineEffect.svg" alt="lineEffect" className={styles.product__bg} />
+            </div>
         </>
     )
 }

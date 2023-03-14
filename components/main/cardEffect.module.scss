@@ -1,5 +1,6 @@
 $card-height: 300px;
 $card-width: calc(300px / 1.5);
+
 .content {
     width: 100%;
     height: 500px;
@@ -7,6 +8,7 @@ $card-width: calc(300px / 1.5);
     align-items: center;
     display: flex;
     font-family: 'Poppins', sans-serif;
+    justify-content: center;
 }
 
 .card {
@@ -33,9 +35,15 @@ $card-width: calc(300px / 1.5);
     z-index: -1;
     padding: 10px;
     border-radius: 12px;
-    border: 1px solid #dedede;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.desc{
+
+.desc {
     margin-right: -2px;
     font-size: 15px;
     font-weight: 300;
@@ -49,6 +57,12 @@ $card-width: calc(300px / 1.5);
     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     opacity: 0.5;
 }
 
@@ -106,7 +120,7 @@ $card-width: calc(300px / 1.5);
 .card:hover .nameOf {
     display: block;
     filter: drop-shadow(-1px -16px 64px #000);
-    text-shadow: -4px 4px 22px rgba(255,255,255,1);
+    text-shadow: -4px 4px 22px rgba(255, 255, 255, 1);
 }
 
 
@@ -125,4 +139,27 @@ $card-width: calc(300px / 1.5);
 .card:hover .character {
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
+}
+
+
+@media (max-width:960px) {
+    .card {
+        width: 300px;
+    }
+}
+
+
+@media (max-width:460px) {
+    .card {
+        width: 240px;
+    }
+
+    .character {
+        position: absolute;
+        top: 10px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
 }

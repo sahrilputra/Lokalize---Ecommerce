@@ -1,0 +1,109 @@
+.product {
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    margin-top: 18px;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 0.6fr;
+        margin: auto;
+        justify-content: start;
+    }
+
+    &__textContainer {
+        width: 80%;
+        margin: auto;
+        position: relative;
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            text-shadow: 8px 3px 0px rgba(167, 167, 167, 0.69);
+            line-height: 50px;
+        }
+    }
+
+    &__tag {
+        position: absolute;
+        top: -40px;
+        font-size: 60px;
+        z-index: -1;
+        font-weight: 700;
+        color: transparent;
+        font-size: 40px;
+        -webkit-text-stroke: 1px black;
+    }
+
+    &__text {
+        padding: 4px;
+        margin-top: 14px;
+        font-size: 18px;
+        padding-top: 8px;
+        
+    }
+
+    &__button {
+        margin-top: 14px;
+        padding: 3px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 120px;
+        height: 50px;
+        background-color: black;
+        margin: auto;
+        border-radius: 28px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: space-evenly;
+    }
+
+    &__cardComponent{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bg{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+    }
+}
+
+
+
+
+@media (max-width: 640px) {
+    .product {
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 780px) {
+    .product {
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (max-width: 540px) {
+    .product {
+        &__textContainer{
+            h1{
+                font-size: 40px;
+            }
+        }
+        &__bg{
+            top: 512px;
+        }
+    }
+}

@@ -8,7 +8,7 @@ const CardEffectComponent = () => {
                 <div className={styles.card}>
                     <div className={styles.wrapper}>
                         <img src="../../component/heroAll.svg"
-                            alt=""
+                            alt="prototype image"
                             className={styles.cover_image} />
                         <div className={styles.title}>
                             TAS MOTIF
@@ -17,7 +17,7 @@ const CardEffectComponent = () => {
                     </div>
 
                     <img src="../../component/bagOne.png"
-                        alt=""
+                        alt="prototype image"
                         className={styles.character}
                     />
                     <div className={styles.nameOf}>TAS MOTIF</div>
