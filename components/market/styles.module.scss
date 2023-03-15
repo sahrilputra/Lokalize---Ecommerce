@@ -1,108 +1,87 @@
-
-.banner {
-    width: 80%;
-    height: max-content;
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
-    top: 30px;
-}
-
 .inputSearch {
-  width: 120px;
-  background: #ffffff;
-  box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  border: 1px solid #dedede;
+    width: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 34px -9px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    border: 1px solid #dedede;
 }
 
 .submitForm {
-  background-color: greenyellow;
+    background-color: greenyellow;
 }
 
 .breadcrumbs {
-  font-family: "Poppins", sans-serif;
-  position: absolute;
-  top: 120px;
-  left: 80px;
-  height: 80px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    height: 80px;
 }
+
 
 // card component Layout
 
 .market {
-  margin: auto;
-  width: 80%;
+    margin: auto;
+    width: 80%;
 
-  &__container {
-    display: grid;
-    grid-template-columns: 0.6fr 1.8fr;
-    gap: 4px;
-  }
+    &__container {
+        display: grid;
+        grid-template-columns: 0.6fr 1.8fr;
+        gap: 4px;
+    }
 
-  &__menuSection {
-    width: 90%;
-    margin-left: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
+    &__menuSection {
+        width: 90%;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 
-  &__tag {
-    font-size: 28px;
-    font-weight: 600;
-  }
-
-  &__item {
-    margin-top: 40px;
-    width: 60%;
-    cursor: pointer;
-  }
-
-  &__card {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    &__image {
-      max-width: 156px;
-      height: 180px;
-      padding: 12px;
-      margin: auto;
+    &__tag {
+        font-size: 28px;
+        font-weight: 600;
     }
 
     &__item {
-      position: relative;
-      width: 200px;
-      background: #fff;
-      border-radius: 22px;
-      min-height: max-content;
-      max-height: max-content;
-      padding: 10px;
-      margin: 10px;
-      box-shadow: 12px 4px 39px -4px rgba(0, 0, 0, 0.25);
-      border-radius: 16px;
+        margin-top: 40px;
+        width: 60%;
+        cursor: pointer;
     }
 
-    &__title {
-      font-weight: 600;
-      font-size: 16px;
-      margin-top: 16px;
-      min-width: 44px;
-      max-width: max-content;
-      cursor: pointer;
-    }
+    &__card {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
 
-    &__param {
-      padding: 12px;
-    }
+        &__image {
+            max-width: 156px;
+            height: 180px;
+            padding: 12px;
+            margin: auto;
+        }
 
-    &__description {
-      font-weight: 300;
-      font-size: 14px;
-    }
+        &__title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 16px;
+            min-width: 44px;
+            max-width: max-content;
+            cursor: pointer;
+        }
+
+        &__param {
+            padding: 12px;
+        }
+
+        &__description {
+            font-weight: 300;
+            font-size: 14px;
+        }
 
         &__harga {
             font-weight: 600;
@@ -110,81 +89,90 @@
             text-align: right;
             margin-top: 20px;
             position: relative;
-           
+
         }
-        &__text{
+
+        &__text {
             height: 180px;
         }
     }
 }
 
-.item{
-    width: 220px;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 12px;
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 0;
-}
-.imgContainer {
-  object-fit: cover;
-  width: 180px;
-  height: 200px;
-  border-radius: 20px;
-}
-.heartIcon {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 14px;
-  font-size: 20px;
-}
-.likedIcon {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 14px;
-  font-size: 20px;
-  color: #e7739e;
-}
-.card__title{
-    margin: 8px;
-    padding: 4px;
-    font-size: 18px;
-    font-weight: 600;
-}
-.itemDesk{
-    font-size: 12px;
-    font-weight: 400;
-    margin: 6px;
-    padding: 3px;
+.market__card{
+    margin-top: 20px;
 }
 
-.itemBawah{
-    position: absolute;
-    bottom: 0;
+.item {
+    width: 180px;
     margin: 4px;
-    font-weight: 600;
-    font-size: 17px;
-    display: flex;
-    flex-direction: row;
-    padding: 4px;
-    right: 0;
-    width: 100%;
-    height: 30px;
+    position: relative;
+
 }
-.prices {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 6px;
+
+.item_text {
+    background-color: #fff;
+    position: relative;
+    top: -20px;
+    height: max-content;
+    padding-bottom: 12px;
+    border-radius: 0 0 12px 12px;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.item__icon {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.likedIcon {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #e7739e;
+}
+
+.heartIcon {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px;
+    margin: 3px;
+}
+
+.itemDesk {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 4px;
+    line-height: 17px;
+}
 
 .prices{
     font-weight: 500;
@@ -226,31 +214,27 @@
         height: 80px;
     }
 
-    .banner {
-        top: 30px;
-    }
+    .market {
+        width: 100%;
+        padding: 10px;
 
-  .market {
-    width: 100%;
-    padding: 10px;
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
 
-    &__container {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-    }
+        &__item {
+            margin-top: 8px;
+            width: 120px;
+        }
 
-    &__item {
-      margin-top: 8px;
-      width: 120px;
+        &__menuSection {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
-
-    &__menuSection {
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-  }
 }

@@ -20,8 +20,7 @@ export const ReCardComponent = () => {
 
                 <div className={styles.market__product}>
                     <div className={styles.market__card}>
-
-                        <img src="" alt="" />
+                        <img src="../../" alt="" />
                     </div>
                 </div>
             </div>
