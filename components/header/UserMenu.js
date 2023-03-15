@@ -1,62 +1,83 @@
-import styles from './styles.module.scss'
-import Link from 'next/link';
-import Image from 'next/image';
-import { signOut, signIn } from 'next-auth/react'
-import { useState } from 'react';
+import styles from "./styles.module.scss";
+import Link from "next/link";
+import Image from "next/image";
+import { signOut, signIn } from "next-auth/react";
+import { useState } from "react";
+import { BiUser, BiCart, BiWrench } from "react-icons/bi";
 
 export const UserMenu = ({ session }) => {
-    const [loggedIn, setLogged] = useState(true);
-    return (
-        <>
-            <div className={styles.menu}>
-                <div className={styles.menu__contaienr}>
-                    {session ? (
-                        <>
-                            <div className={styles.menu__profile}>
-                            <img className={styles.profileMenus} src={session.user.image} alt="user icon" />
-                            </div><h1>Hello <span>{session.user.name}</span>,</h1>
-                        </>
-                    ) : (
-                        <>
-                        <div className={styles.menu__profile}>
-                            <Image
-                                src="/avatar.png"
-                                className={styles.avatar}
-                                alt='avatar'
-                                width={80}
-                                height={80} />
-                        </div><h1>Hello Bestie,</h1>
-                    </>
+  const [loggedIn, setLogged] = useState(true);
+  return (
+    <>
+      <div className={styles.menu}>
+        <div className={styles.menu__contaienr}>
+          {session ? (
+            <>
+              <div className={styles.menu__profile}>
+                <img
+                  className={styles.profileMenus}
+                  src={session.user.image}
+                  alt="user icon"
+                />
+              </div>
+              <h1>
+                Hello <span>{session.user.name}</span>,
+              </h1>
+            </>
+          ) : (
+            <>
+              <div className={styles.menu__profile}>
+                <Image
+                  src="/avatar.png"
+                  className={styles.avatar}
+                  alt="avatar"
+                  width={80}
+                  height={80}
+                />
+              </div>
+              <h1>Hello Bestie,</h1>
+            </>
+          )}
+        </div>
+        <ul>
+          <li>
+            <Link href="#">
+              <BiUser className={styles.iconUserMenu} />
+              Account
+            </Link>
+          </li>
+          <li>
+            <Link href="#">
+              <BiCart className={styles.iconUserMenu} /> Order
+            </Link>
+          </li>
+          <li>
+            <Link href="#">
+              <BiWrench className={styles.iconUserMenu} />
+              Setting 
+            ing</Link>
+          </li>
+        </ul>
 
-                    )
-
-                    }
-
-                </div>
-                <ul>
-                    <li>
-                        <Link href="#">Account</Link>
-                    </li>
-                    <li>
-                        <Link href="#">Order</Link>
-                    </li>
-                    <li>
-                        <Link href="#">Setting</Link>
-                    </li>
-                </ul>
-
-                <div className={styles.btn}>
-                    {session ? (
-                         <button className={styles.btn__secondary} onClick={()=> signOut}>Sign out</button>
-                    ):(
-                        <>
-                        <button className={styles.btn__primary}> <Link href="/signin">Sign in</Link></button>
-                        <button className={styles.btn__secondary}> <Link href="/signin">Register</Link></button>
-                        </>
-                    )}
-                  
-                </div>
-            </div>
-        </>
-    )
-}
+        <div className={styles.btn}>
+          {session ? (
+            <button className={styles.btn__secondary} onClick={() => signOut}>
+              Sign out
+            </button>
+          ) : (
+            <>
+              <button className={styles.btn__primary}>
+                {" "}
+                <Link href="/signin">Sign in</Link>
+              </button>
+              <button className={styles.btn__secondary}>
+                {" "}
+                <Link href="/signin">Register</Link>
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </>
+  );
+};
