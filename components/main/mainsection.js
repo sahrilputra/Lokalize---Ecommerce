@@ -6,6 +6,7 @@ import { Content } from './content'
 import { Subscribe } from './subscribe';
 import { ReviewComponent } from './review';
 import { SectionCustom } from './sectionCustom';
+import { BlogComponent } from './blogComponent';
 
 export const Mainsection = () => {
   return (
@@ -15,6 +16,7 @@ export const Mainsection = () => {
     <Content />
     {/* <SectionCustom/> */}
     <ReviewComponent />
+    <BlogComponent /> 
     </>
 
   )

@@ -2,43 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     padding: 0;
     margin: 0;
-    &:before, :after{
-    box-sizing: border-box;
-    background-color: $bg-color;
+    &:before,
+    :after {
+        box-sizing: border-box;
+        background-color: $bg-color;
     }
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color:$bg-color;
+    background-color: $bg-color;
 }
-button, input, selec, textarea{
+
+button,
+input,
+selec,
+textarea {
     font: inherit;
 }
-p,h1,h2,h3,h4,h5,h6{
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
 }
 
-image, video, canvas, svg{
+image,
+video,
+canvas,
+svg {
     max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-button{
+
+button {
     border: none;
     outline: none;
 }

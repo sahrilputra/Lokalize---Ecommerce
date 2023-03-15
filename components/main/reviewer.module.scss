@@ -41,12 +41,15 @@
 }
 
 .review {
+    top: 40px;
     font-family: 'poppins', sans-serif;
     position: relative;
     width: 80%;
-    height: 100vh; // delete 
+    margin-top: 20px;
     margin: auto;
+    height: max-content;
     display: grid;
+    gap: 40px;
     grid-template-columns: 0.5fr 1fr;
     align-items: center;
 
@@ -106,6 +109,9 @@
         @include animation(bouncebounce 0.9s 1.5s infinite ease-out alternate);
     }
 
+    &__rete{
+        height: 100px;
+    }
     &__flex {
         display: flex;
         flex-direction: column;
@@ -179,7 +185,7 @@
 
 .imgAbsolute {
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     right: 0;
     width: 500px;
     height: 500px;
@@ -195,8 +201,17 @@
         &__card1,
         &__card2 {
             width: 180px;
-            font-size: 14px;
+        }
 
+        &__card1{
+            height: 320px;
+        }
+        &__card2{
+            height: 230px;
+        }
+        &__cardReview {
+            font-size: 12px;
+            margin-bottom: 10px;
         }
     }
 
