@@ -1,0 +1,20 @@
+.market {
+    width: 96%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    margin-bottom: 12px;
+
+    font-family: 'Poppins', sans-serif;
+
+    &__heading {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    &__wrap{
+        background-color: #fff;
+    }
+}

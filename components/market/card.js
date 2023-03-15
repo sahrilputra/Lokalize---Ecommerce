@@ -2,6 +2,7 @@ import styles from '../market/styles.module.scss';
 import Image from 'next/image';
 import { HiOutlineHeart, HiOutlineShoppingCart, HiHeart } from "react-icons/hi"
 import { FaSearch } from 'react-icons/fa';
+import { BiCartAdd } from "react-icons/bi";
 import data from '../../models/data'
 import { Modal, Card } from 'flowbite-react';
 import { QuickView } from './quickView';
@@ -150,45 +151,49 @@ export const CardComponent = () => {
                       src={`${tas.image_url}`}
                       alt="item image"
                     />
+                    <div className={styles.item_icon}>
+                      {isLiked ? (
+                        <HiHeart className={`${styles.likedIcon} animate__animated animate__tada`} onClick={() => handleLikedItem(tas.id)} />
+                      ) : (
+                        <HiOutlineHeart className={`${styles.heartIcon}`} onClick={() => handleLikedItem(tas.id)} />
+                      )
+                      }
+                    </div>
 
                     <div className={styles.item_text}>
-                      <div className={styles.item_icon}>
-                        {isLiked ? (
-                          <HiHeart className={`${styles.likedIcon} animate__animated animate__tada`} onClick={() => handleLikedItem(tas.id)} />
-                        ) : (
-                          <HiOutlineHeart className={`${styles.heartIcon}`} onClick={() => handleLikedItem(tas.id)} />
-                        )
-                        }
-                      </div>
+
                       <Link href='/detail'>
                         <h3 className={styles.card__title}>
                           {tas.name}
                         </h3>
+                        <h3 className={styles.prices}>Rp.{tas.price}</h3>
                       </Link>
                       <div className={styles.item_param}>
                         <p className={styles.itemDesk}>
                           {tas.description}
                         </p>
+                    
                       </div>
                       <div className={styles.itemBawah}>
                         <div className={styles.itemCartIcon}>
+                          <BiCartAdd
+                            className={`${styles.cartIcon} 
+                              mb-3 animate__animated animate__pulse `}
+                            onClick={() => handleItemClick(tas)}
+                          />
                           {
-
-                          }
-                          <HiOutlineShoppingCart className={`${styles.cartIcon} mb-3 animate__animated animate__pulse `} onClick={() => handleItemClick(tas)}/>
-                          {selectedItem && selectedItem.id === tas.id && (
-                            <QuickView
-                              open={true}
-                              onClose={handleClose}
-                              title={selectedItem.name}
-                              image={selectedItem.image_url}
-                              description={selectedItem.description}
-                              size={selectedItem.size}
-                            />
-                          )}
-                          {/* <CartModal /> */}
+                            selectedItem && selectedItem.id === tas.id && (
+                              <QuickView
+                                open={true}
+                                onClose={handleClose}
+                                title={selectedItem.name}
+                                image={selectedItem.image_url}
+                                description={selectedItem.description}
+                                size={selectedItem.size}
+                              />
+                            )}
                         </div>
-                        <h3 className={styles.prices}>Rp.{tas.price}</h3>
+                   
                       </div>
                     </div>
                   </div>

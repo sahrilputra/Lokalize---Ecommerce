@@ -2,54 +2,64 @@
     "item": [
         {
             "id": 1,
-            "name": "Kemeja Lengan Pendek",
-            "description": "Kemeja lengan pendek dengan bahan katun yang adem",
+            "name": "Daster Bali",
+            "description": "Daster dengan motif khas Bali lengan pendek dengan bahan katun yang adem",
             "price": 100000,
-            "color": "Putih",
+            "color": "Merah, biru, hijau, biru muda",
             "size": "M",
-            "category": "baju", 
-            "image_url": "https://s4.bukalapak.com/img/9779289022/w-1000/Kemeja_Pilot_Putih_Lengan_Pendek.jpg"
+            "category": "baju",
+            "image_url": "https://s3.bukalapak.com/img/3911073165/w-1000/DASTER_BALI___BATIK.jpg" 
         },
         {
             "id": 2,
-            "name": "Kaos Polos",
-            "description": "Kaos polos dengan bahan cotton combed 24s",
+            "name": "Kaos Bali",
+            "description": "Kaos dengan bahan cotton combed 24s dengan motif khas Bali",
             "price": 50000,
-            "color": "Hitam",
+            "color": "Putih",
             "size": "L",
             "category": "baju",
-            "image_url": "https://th.bing.com/th/id/OIP.fnAshVv5wxbMSw328ii20QAAAA?pid=ImgDet&rs=1"
+            "image_url": "https://cf.shopee.co.id/file/72198ebc3637d0cd095c945f8494b4a7"
         },
         {
             "id": 3,
-            "name": "Blus Wanita",
-            "description": "Blus wanita dengan bahan chiffon yang lembut",
+            "name": "Kulot Batik Arimbi",
+            "description": "Celana kulot dengan batik Arimbi",
             "price": 80000,
-            "color": "Putih",
+            "color": "Coklat",
             "size": "S",
             "category": "baju",
-            "image_url": "https://s3.bukalapak.com/img/327629374/w-1000/blus_putih_wanita_untuk_kerja___blus_wanita_warna_putih_baju.png"
+            "image_url": "https://batikunik.com/userfiles/products/87000/celana-kulot-arimbi-87105.jpg"
         },
         {
             "id": 4,
-            "name": "Hoodie",
-            "description": "Hoodie dengan bahan fleece yang hangat",
+            "name": "Kulot Tenun",
+            "description": "Celana kulot tenun model lurus",
             "price": 150000,
-            "color": "Abu-abu",
+            "color": "hitam",
             "size": "XL",
             "category": "baju",
-            "image_url": "https://th.bing.com/th/id/OIP.d_J-ylVeyjruMCi0QA891QHaJo?pid=ImgDet&rs=1"
-        },
+            "image_url": "https://s2.bukalapak.com/img/7363159381/large/PhotoGrid_1508137485675_scaled.jpg"
+         },
         {
             "id": 5,
-            "name": "Kemeja Lengan Panjang",
-            "description": "Kemeja lengan panjang dengan bahan katun yang nyaman",
+            "name": "Blus batik Jogja",
+            "description": "Blus lengan panjang dengan bahan katun yang nyaman dengan batik khas Jogja",
             "price": 120000,
-            "color": "Biru",
+            "color": "Kuning",
             "size": "M",
             "category": "baju",
-            "image_url": "https://th.bing.com/th/id/R.80869c7619bd9e8d5577710a31aeced7?rik=fcsOg73bQCNYEA&riu=http%3a%2f%2fwww.dececco.net%2fweb%2fwp-content%2fuploads%2f2016%2f04%2fCH3A-768x768.jpg&ehk=oBzHlD0DRB3HE4x0TvTAU%2bdbNfq3Yvqd5oRVpSyoBrw%3d&risl=&pid=ImgRaw&r=0"
-        },
+            "image_url": "https://cf.shopee.co.id/file/b9411e2f788050567bd106b9406048ce"
+           },
+        {
+            "id": 6,
+            "name": "Rok Batik Jogja",
+            "description": "Rok dengan bahan katun yang nyaman",
+            "price": 60000,
+            "color": "Coklat",
+            "size": "S",
+            "category": "baju",
+            "image_url": "https://batikunik.com/userfiles/products/37000/cbuc52m10-celana-batik-rok-panjang-motif-batik-jogja-klasik.jpg"
+          },
         {
             "id": 6,
             "name": "Tas Ransel",
@@ -139,6 +149,15 @@
             "price": 10000,
             "category": "dekorasi",
             "image_url": "https://th.bing.com/th/id/OIP.6WUyljYW3N7yFL1OAamozgHaHa?pid=ImgDet&rs=1"
+        },
+        {
+            "id": 16,
+            "name": "Tas Rotan Bali",
+            "description": "Tas selempang dari rotan yang fashionable",
+            "price": 150000,
+            "color": "Coklat",
+            "size": "Medium",
+            "image_url": "https://th.bing.com/th/id/OIP.bzKmG6dlW_DKDMU6rmXy9wHaHa?pid=ImgDet&rs=1"
         }
     ]
 }

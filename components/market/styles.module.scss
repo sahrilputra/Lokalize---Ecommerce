@@ -1,13 +1,3 @@
-
-.banner {
-    width: 80%;
-    height: max-content;
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
-    top: 30px;
-}
-
 .inputSearch {
     width: 120px;
     background: #FFFFFF;
@@ -67,24 +57,12 @@
         flex-direction: row;
         justify-content: space-evenly;
         position: relative;
+
         &__image {
             max-width: 156px;
             height: 180px;
             padding: 12px;
             margin: auto;
-        }
-
-        &__item {
-            position: relative;
-            width: 200px;
-            background: #fff;
-            border-radius: 22px;
-            min-height: max-content;
-            max-height: max-content;
-            padding: 10px;
-            margin: 10px;
-            box-shadow: 12px 4px 39px -4px rgba(0, 0, 0, 0.25);
-            border-radius: 16px;
         }
 
         &__title {
@@ -111,91 +89,117 @@
             text-align: right;
             margin-top: 20px;
             position: relative;
-           
+
         }
-        &__text{
+
+        &__text {
             height: 180px;
         }
     }
 }
 
-.item{
-    width: 220px;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 12px;
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 0;
+.market__card{
+    margin-top: 20px;
 }
-.imgContainer{
-    object-fit: cover;
+
+.item {
     width: 180px;
-    height: 200px;
-    border-radius: 20px;
-   
+    margin: 4px;
+    position: relative;
+
 }
-.heartIcon{
-    cursor: pointer;
+
+.item_text {
+    background-color: #fff;
+    position: relative;
+    top: -20px;
+    height: max-content;
+    padding-bottom: 12px;
+    border-radius: 0 0 12px 12px;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.item__icon {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
     position: absolute;
     top: 0;
-    right: 0;
-    margin: 14px;
-    font-size: 20px;
-}
-.likedIcon{
     cursor: pointer;
+}
+
+.likedIcon {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 14px;
-    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
     color: #e7739e;
 }
-.card__title{
-    margin: 8px;
+
+.heartIcon {
+    width: 25px;
+    height: 25px;
     padding: 4px;
-    font-size: 18px;
-    font-weight: 600;
-}
-.itemDesk{
-    font-size: 12px;
-    font-weight: 400;
-    margin: 6px;
-    padding: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
 }
 
-.itemBawah{
-    position: absolute;
-    bottom: 0;
-    margin: 4px;
+.card__title {
+    font-size: 16px;
     font-weight: 600;
-    font-size: 17px;
-    display: flex;
-    flex-direction: row;
     padding: 4px;
-    right: 0;
-    width: 100%;
-    height: 30px;
+    margin: 3px;
 }
+
+.itemDesk {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 4px;
+    line-height: 17px;
+}
+
 .prices{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 6px;
+    font-weight: 500;
+    padding: 4px;
+    margin: 2px;
+}
+
+.itemCartIcon{
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    position: relative;
+    cursor: pointer;
+    margin:8px ;
 }
 .cartIcon{
+    top: 0;
     position: absolute;
+    margin: auto;
+    right: 0;
     left: 0;
-    font-weight: 600;
-    font-size: 22px;
-    margin-left: 10px;
+    bottom: 0;
+    color: #fff;
 }
-
 // .quickViewModal{
 //     position: absolute;
 //     top: 50%;
@@ -208,10 +212,6 @@
     .breadcrumbs {
         left: 20px;
         height: 80px;
-    }
-
-    .banner {
-        top: 30px;
     }
 
     .market {

@@ -5,6 +5,7 @@ import { BreadCrumbsElement } from './breadCumbs'
 import { Banner } from './banner'
 import { SearchBar } from './searchBar'
 import { CardComponent } from './card'
+import { ReCardComponent } from './cardComponent';
 
 export const MarketMain = () => {
   return (
@@ -14,6 +15,7 @@ export const MarketMain = () => {
     <Banner />
     <SearchBar />
     <CardComponent />
+    
     </>
   )
 }
