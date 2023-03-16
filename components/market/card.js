@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from '../market/styles.module.scss';
 import Image from 'next/image';
 import { HiOutlineHeart, HiOutlineShoppingCart, HiHeart } from "react-icons/hi"
 import { FaSearch } from 'react-icons/fa';
 import { BiCartAdd } from "react-icons/bi";
 import data from '../../models/data'
-import { Modal, Card } from 'flowbite-react';
+import { Modal, Card, Pagination } from 'flowbite-react';
 import { QuickView } from './quickView';
 import { FavoriteMenu } from '../header/favoriteMenu';
 import { useState, createContext, useContext } from 'react';
@@ -18,6 +19,29 @@ const LikedItemsContext = createContext();
 
 export const CardComponent = () => {
 
+  // Cart Item
+  const [cartItem, setCartItem] = useState([]);
+  const handleAddToCart = (item) => {
+    setCartItem((prevSelectedItems) => [...prevSelectedItems, item]);
+  }
+
+  // liked item 
+  const [like, setLike] = useState([]);
+
+
+  const evenCartItem = () => {
+    if (setCartItem > 0) {
+      setCartItem()
+    }
+  }
+
+  // Pagination Handler 
+  const [item, setItem] = useState(data.item);
+
+
+  const paginationHandler = ({ selected }) => {
+    setCurrenctPage(selected);
+  }
 
   // Quick View
   const [open, setOpen] = useState(false)
@@ -54,21 +78,29 @@ export const CardComponent = () => {
   const [category, setCategory] = useState('all'); // default category
   const [visible, setVisible] = useState(false);
   const [showing, setShowing] = useState(false);
-  const [favorite, setFavorite] = useState([]);
   const [menuHidden, setMenuHidden] = useState(false);
   const [likeItem, setLiked] = useState([]);
   const [fillFavorite, setFill] = useState(false);
 
 
-  const handlerFavorite = (item) => {
-    setFavorite([...favorite, item]);
-  }
+  const [currentCategory, setCurrentCategory] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const filteredItems = category === 'all' ? data.item : data.item.filter(item => item.category === category);
+  const startIndex = (currentPage - 1) * 8;
+  const endIndex = startIndex + 8;
+  const itemsToDisplay = filteredItems.slice(startIndex, endIndex);
+
   const handlerFilter = (selectedCategory) => {
     setCategory(selectedCategory);
-
   }
-  const filteredItems = category === 'all' ? data.item : data.item.filter(item => item.category === category);
 
+  const handlePageChange = (page) => {
+    handleCategoryChange(currentCategory, page);
+  };
+  const handleCategoryChange = (category, page) => {
+    setCurrentCategory(category);
+    setCurrentPage(page || 1);
+  };
   const toggleMenu = () => {
     setVisible(!visible);
     setShowing(true);
@@ -141,7 +173,7 @@ export const CardComponent = () => {
           </div>
 
           <div className={styles.market__card}>
-            {filteredItems.map((tas) => {
+            {itemsToDisplay.map((tas) => {
               const isLiked = likeItem.includes(tas.id);
 
               return (
@@ -172,7 +204,7 @@ export const CardComponent = () => {
                         <p className={styles.itemDesk}>
                           {tas.description}
                         </p>
-                    
+
                       </div>
                       <div className={styles.itemBawah}>
                         <div className={styles.itemCartIcon}>
@@ -193,18 +225,29 @@ export const CardComponent = () => {
                               />
                             )}
                         </div>
-                   
                       </div>
                     </div>
                   </div>
+                  {/* {
+                    <FavoriteMenu favoriteItem={likeItem} />
+                  } */}
+
                   {/* {
                   favorite.length > 0 && <FavoriteMenu favoriteItem={favorite} className="hidden"/>
                   } */}
                 </>
               )
             })}
-          </div>
 
+          </div>
+        </div>
+        <div className={styles.nextBntContainer}>
+          <Pagination
+            className={styles.pagi}
+            currentPage={1}
+            totalPages={endIndex}
+            onPageChange={handlePageChange}
+          />
         </div>
       </div>
     </>

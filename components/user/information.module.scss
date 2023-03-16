@@ -1,0 +1,109 @@
+
+.information {
+    &__back {
+        width: 42px;
+        height: 42px;
+        border: 1px solid #dedede;
+        background-color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    &__head {
+        margin-top: 20px;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 13px;
+        border-bottom: 2px solid #dedede;
+        width: 100%;
+        color: $text--dark;
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+.container{
+    padding: 10px;
+    margin: 4px;
+    &__head{
+   
+        h1{
+            color: $text--dark;
+            font-weight: 600;
+            font-size:22px;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: $grey--100;
+    }
+    &__foto{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        color: $text--dark;
+        margin-bottom: 10px;
+    }
+    &__changePict{
+        position: relative;
+        width:80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 8px;
+    }
+    &__avatar{
+        position: relative;
+        cursor: pointer;
+    }
+    &__Iconedit{
+        background-color: #2d2d2d;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        padding: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        cursor: pointer;
+    }
+
+   
+}
+.userName{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+.formControl{
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+    border-radius: 12px;
+    outline: $text--dark solid 2px;
+    padding: 5px;
+    color: $text--dark;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}

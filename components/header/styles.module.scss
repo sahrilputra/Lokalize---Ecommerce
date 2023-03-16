@@ -66,33 +66,6 @@
                 width: 30px;
                 height: 30px;
             }
-            &:nth-child(1){
-                &:active{
-                    background-color: #dedede;
-                    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    border-radius: 50%;
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-            &:nth-child(2){
-                &:active, &:focus{
-                    background-color: #dedede;
-                    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    border-radius: 50%;
-                    width: 30px;
-                    height: 30px;
-                    outline: none;
-                }
-            } &:nth-child(3){
-                &:active, &:focus{
-                    background-color: #dedede;
-                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    border-radius: 50%;
-                    outline: none;
-                }
-            }
-
 
         }
         &__right__li{
@@ -208,6 +181,14 @@
         font-weight: 400;
         border-bottom: 1.5px solid #dedede70;
     }
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
 }
 
 .avatar {

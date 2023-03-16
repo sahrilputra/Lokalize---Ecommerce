@@ -1,17 +1,17 @@
 {
     "item": [
         {
-            "id": 1,
+            "id": 101,
             "name": "Daster Bali",
             "description": "Daster dengan motif khas Bali lengan pendek dengan bahan katun yang adem",
             "price": 100000,
             "color": "Merah, biru, hijau, biru muda",
             "size": "M",
             "category": "baju",
-            "image_url": "https://s3.bukalapak.com/img/3911073165/w-1000/DASTER_BALI___BATIK.jpg" 
+            "image_url": "https://s3.bukalapak.com/img/3911073165/w-1000/DASTER_BALI___BATIK.jpg"
         },
         {
-            "id": 2,
+            "id": 202,
             "name": "Kaos Bali",
             "description": "Kaos dengan bahan cotton combed 24s dengan motif khas Bali",
             "price": 50000,
@@ -21,7 +21,7 @@
             "image_url": "https://cf.shopee.co.id/file/72198ebc3637d0cd095c945f8494b4a7"
         },
         {
-            "id": 3,
+            "id": 303,
             "name": "Kulot Batik Arimbi",
             "description": "Celana kulot dengan batik Arimbi",
             "price": 80000,
@@ -31,7 +31,7 @@
             "image_url": "https://batikunik.com/userfiles/products/87000/celana-kulot-arimbi-87105.jpg"
         },
         {
-            "id": 4,
+            "id": 404,
             "name": "Kulot Tenun",
             "description": "Celana kulot tenun model lurus",
             "price": 150000,
@@ -39,9 +39,9 @@
             "size": "XL",
             "category": "baju",
             "image_url": "https://s2.bukalapak.com/img/7363159381/large/PhotoGrid_1508137485675_scaled.jpg"
-         },
+        },
         {
-            "id": 5,
+            "id": 505,
             "name": "Blus batik Jogja",
             "description": "Blus lengan panjang dengan bahan katun yang nyaman dengan batik khas Jogja",
             "price": 120000,
@@ -49,9 +49,9 @@
             "size": "M",
             "category": "baju",
             "image_url": "https://cf.shopee.co.id/file/b9411e2f788050567bd106b9406048ce"
-           },
+        },
         {
-            "id": 6,
+            "id": 606,
             "name": "Rok Batik Jogja",
             "description": "Rok dengan bahan katun yang nyaman",
             "price": 60000,
@@ -59,83 +59,172 @@
             "size": "S",
             "category": "baju",
             "image_url": "https://batikunik.com/userfiles/products/37000/cbuc52m10-celana-batik-rok-panjang-motif-batik-jogja-klasik.jpg"
-          },
-        {
-            "id": 6,
-            "name": "Tas Ransel",
-            "description": "Tas ransel dengan bahan yang kuat dan nyaman digunakan",
-            "price": 150000,
-            "color": "Abu-abu",
-            "category": "tas",
-            "size": "L",
-            "image_url": "https://s2.bukalapak.com/img/2164542261/w-1000/Wenjie_Tas_Ransel_Canvas_Retro.jpg"
         },
         {
-            "id": 7,
-            "name": "Tas Messenger",
-            "description": "Tas messenger dengan bahan kulit yang berkualitas",
+            "id": 704,
+            "name": "Baju Batik Pasangan",
+            "description": "Baju batik untuk pria dan wanita",
+            "price": 110000,
+            "color": "Hijau",
+            "category": "baju",
+            "size": "M",
+            "image_url": "https://1.bp.blogspot.com/-X6-89t1529Q/WPjMwaqhSKI/AAAAAAAABFo/r5gUouhXXwcqtG3gNg8JVtxY_zOr9dLkwCEw/s1600/Contoh-Desain-Baju-Batik-Terbaik-3.jpg"
+        },
+        {
+            "id": 812,
+            "name": "Dress Batik",
+            "description": "Dress dengan bahan katun dan motif bunga-bunga",
+            "price": 500000,
+            "color": "Coklat",
+            "category": "baju",
+            "size": "L",
+            "image_url": "https://th.bing.com/th/id/R.1508cbb79743e2546570aa433f6179db?rik=07U3R4C1Q2hs%2bw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-UZ81SPRUGx0%2fUBy8qKmIk9I%2fAAAAAAAANIY%2faIQ2GF_Qyik%2fs1600%2fDress-Batik-Solo-DB2330.jpg&ehk=G9EGhPntxcMICdxD%2bjSPhGzMO1ttTaXvCqOSagS3ln0%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 932,
+            "name": "Outer Batik",
+            "description": "Outer dengan bahan kain katun",
+            "price": 40000,
+            "color": "Hitam",
+            "category": "baju",
+            "size": "M",
+            "image_url": "https://th.bing.com/th/id/OIP.buCJqyQLYnesi93OZIuWGgHaKM?pid=ImgDet&rs=1"
+        },
+        {
+            "id": 1012,
+            "name": "Setelan Batik",
+            "description": "Setelan dengan bahan katun dengan batik jogja",
+            "price": 200000,
+            "color": "Hijau",
+            "category": "baju",
+            "size": "32",
+            "image_url": "https://batikunik.com/userfiles/products/93000/setelan-batik-kulot-93144.jpg"
+        },
+        {
+            "id": 1123,
+            "name": "Tas Rotan Bali",
+            "description": "Tas selempang dari rotan yang fashionable",
+            "price": 150000,
+            "color": "Coklat",
+            "category": "tas",
+            "size": "Medium",
+            "image_url": "https://th.bing.com/th/id/OIP.bzKmG6dlW_DKDMU6rmXy9wHaHa?pid=ImgDet&rs=1"
+        },
+        {
+            "id": 251,
+            "name": "Tas Batik-Kulit Kalasa",
+            "description": "Handle bag yang mudah dibawa kemana-mana",
             "price": 300000,
             "color": "Coklat",
-            "size": "M",
             "category": "tas",
-            "image_url": "https://th.bing.com/th/id/OIP.mgwTAsm5Owr8Bo6j-oTWlAHaHa?pid=ImgDet&rs=1"
+            "size": "Small",
+            "image_url": "https://3.bp.blogspot.com/-VxmXiHw5W94/UITqsSlEP8I/AAAAAAAAAPQ/AceC24dnH7U/s1600/P1030411.JPG"
         },
         {
-            "id": 8,
-            "name": "Tas Selempang",
-            "description": "Tas selempang dengan bahan kanvas yang ringan",
+            "id": 3523,
+            "name": "Tas rajut selempang",
+            "description": "Tas selempang dari bahan wol yang dirajut dengan ulet",
             "price": 75000,
-            "color": "Biru",
-            "size": "S",
+            "color": "Hijau",
             "category": "tas",
-            "image_url": "https://i.pinimg.com/originals/42/2b/3a/422b3a58024abbc4751935ef084ce70a.jpg"
+            "size": "Medium",
+            "image_url": "https://th.bing.com/th/id/OIP.EsszAw0RuSezu3npCRAP-gHaHa?pid=ImgDet&rs=1"
         },
         {
-            "id": 9,
-            "name": "Tas Tote Bag",
+            "id": 41214,
+            "name": "Handle tote Bag Bali",
             "description": "Tas tote bag dengan bahan kanvas yang kuat",
             "price": 90000,
-            "color": "Putih",
-            "size": "M",
+            "color": "all color",
             "category": "tas",
-            "image_url": "https://i1.wp.com/indoblacu.com/wp-content/uploads/2020/06/tas-blacu.jpg?resize=1024,1024"
+            "size": "Medium",
+            "image_url": "https://i.pinimg.com/736x/20/40/8e/20408e0c76838a6005068ddb1ed3d5b8--bali-style-beach-essentials.jpg"
         },
         {
-            "id": 10,
-            "name": "Tas Laptop",
-            "description": "Tas laptop dengan bahan anti air",
+            "id": 531231,
+            "name": "Pouch Etnik Bali",
+            "description": "Pouch yang cantik khas bali",
             "price": 200000,
-            "color": "Hitam",
-            "size": "L",
+            "color": "Hitam-coklat",
             "category": "tas",
-            "image_url": "https://s3.bukalapak.com/img/3469572152/w-1000/Tas_Laptop_14_inch_Tas_Laptop_Selempang_Jinjing_Wanita.jpg"
+            "size": "Small",
+            "image_url": "https://www.exbali.com/images/HB_w.jpg"
         },
         {
-            "id": 11,
-            "name": "Bunga Mawar Merah",
-            "description": "Bunga mawar merah segar yang bisa dijadikan hiasan di dalam rumah.",
+            "id": 612313,
+            "name": "Tas Bahu Anyaman Rotan",
+            "description": "Tas Bahu berbahan dasar rotan yang trendy dan ramah lingkungan",
+            "price": 250000,
+            "color": "Coklat",
+            "category": "tas",
+            "size": "Large",
+            "image_url": "https://th.bing.com/th/id/R.c27f466eec984f858db0ac36358a6d13?rik=kLe9Jowwl87m5Q&riu=http%3a%2f%2fwww.catkayu.net%2fwp-content%2fuploads%2f2017%2f04%2fcat-untu-kerajinan-tas-rotan.jpg&ehk=V2bMwHy2pjGnrIuzLUCOfzb19%2fTSTCj0c7CwNaGpedg%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 7123123,
+            "name": "Tas Bahu Batik",
+            "description": "Tas bahu dengan motif batik yang cantik",
+            "price": 100000,
+            "color": "Coklat",
+            "category": "tas",
+            "size": "Medium",
+            "image_url": "https://th.bing.com/th/id/OIP.R9ImVn8R-Ir3wTNZilnT9gHaLH?pid=ImgDet&rs=1"
+        },
+        {
+            "id": 841241,
+            "name": "Tas Serut etnik Kalimantan",
+            "description": "Tas serut Anjat khas suku Dayak",
+            "price": 180000,
+            "color": "Hitam",
+            "category": "tas",
+            "size": "Medium",
+            "image_url": "https://s0.bukalapak.com/img/0373721882/w-1000/Tas_Serut_Manik_Kalimantan.jpg"
+        },
+        {
+            "id": 95332,
+            "name": "Tas Etnik Songket",
+            "description": "Handle bag dengan motif songket",
+            "price": 120000,
+            "color": "pink-ungu",
+            "category": "tas",
+            "size": "Small",
+            "image_url": "https://elokal.com.my/wp-content/uploads/2021/06/77.jpg"
+        },
+        {
+            "id": 10423,
+            "name": "Tote Bag batik",
+            "description": "tote bag dengan motif batik",
+            "price": 80000,
+            "color": "Abu-abu, biru",
+            "category": "tas",
+            "size": "Medium",
+            "image_url": "https://th.bing.com/th/id/R.58ff15dbb50b2679213fb01577e5657a?rik=5qRejzMz%2bQUhiA&riu=http%3a%2f%2fwww.uncommongoods.com%2fimages%2fitems%2f25200%2f25282_1_1200px.jpg&ehk=JTYUZaGPtultdd8rbs2Y2U6qCVlp3tu0EJ%2ff%2fraFk80%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 121321,
+            "name": "Dream Catcher  Bali",
+            "description": "Penangkar mimpi untuk hiasan dinding.",
             "price": 15000,
             "category": "dekorasi",
-            "image_url": "https://th.bing.com/th/id/OIP.LU-iRv5CDcvSHCPczntfLAHaHZ?pid=ImgDet&rs=1"
+            "image_url": "https://i.pinimg.com/originals/59/38/17/59381718e0add53eba1684ce37b182ad.jpg"
         },
         {
-            "id": 12,
-            "name": "Lampion Kertas",
-            "description": "Lampion kertas dengan berbagai warna yang cocok untuk dekorasi di dalam ruangan.",
+            "id": 253213,
+            "name": "Tempat buah Rotan",
+            "description": "Tempat buah dari rotan yang cocok dijadikan tempat buah yang estetik.",
             "price": 25000,
             "category": "dekorasi",
-            "image_url": "https://cf.shopee.co.id/file/75e076d7fc80ec0dfcba150f58174910"
+            "image_url": "https://1.bp.blogspot.com/_LqOQ821VxfU/TCnzx7k6CdI/AAAAAAAAANM/LjCa6y7iYcw/s1600/keranjangmotif.gift.jpg"
         },
         {
-            "id": 13,
-            "name": "Topiari Buah",
-            "description": "Topiari buah yang terbuat dari buah-buahan segar dan cantik sebagai hiasan meja.",
+            "id": 312315121,
+            "name": "Pensil holder",
+            "description": "Wadah pensil agar terlihat rapi dan lebih indah.",
             "price": 35000,
-            "category": "dekorasi",
-            "image_url": "https://1.bp.blogspot.com/-Wq9SpeqH2wA/UsYwr8S0kyI/AAAAAAAAEnM/iubpQwWNelA/s1600/topiary+sunkist.jpg"
+            "image_url": "https://4.bp.blogspot.com/-BM2_-0V_yas/VQ9w6khtD6I/AAAAAAAAAuM/dTBod_W1004/s1600/kerajinan%2Btangan%2Bkoran%2Bbekas.jpg"
         },
         {
-            "id": 14,
+            "id": 4123151,
             "name": "Lukisan Kanvas",
             "description": "Lukisan kanvas dengan berbagai jenis gambar yang bisa ditempelkan di dinding.",
             "price": 50000,
@@ -143,7 +232,7 @@
             "image_url": "https://c.kaskus.id/kaskus_forum_image/p4kzno_1519352292.459_.jpg"
         },
         {
-            "id": 15,
+            "id": 5121432141,
             "name": "Gantungan Kunci Kucing",
             "description": "Gantungan kunci lucu dengan bentuk kucing yang bisa dijadikan hiasan kunci atau tas.",
             "price": 10000,
@@ -151,13 +240,44 @@
             "image_url": "https://th.bing.com/th/id/OIP.6WUyljYW3N7yFL1OAamozgHaHa?pid=ImgDet&rs=1"
         },
         {
-            "id": 16,
-            "name": "Tas Rotan Bali",
-            "description": "Tas selempang dari rotan yang fashionable",
-            "price": 150000,
-            "color": "Coklat",
-            "size": "Medium",
-            "image_url": "https://th.bing.com/th/id/OIP.bzKmG6dlW_DKDMU6rmXy9wHaHa?pid=ImgDet&rs=1"
+            "id": 65125121,
+            "name": "Hiasan meja",
+            "description": "Hiasan Meja berbentuk burung dari besi daur ulang.",
+            "price": 45000,
+            "category": "dekorasi",
+            "image_url": "https://www.mobgenic.com/wp-content/uploads/2014/01/kerajinan-dari-besi-bekas-1.jpg"
+        },
+        {
+            "id": 7213213,
+            "name": "Patung Kayu",
+            "description": "Patung kayu dengan berbagai bentuk dan ukuran yang bisa dijadikan hiasan di ruangan.",
+            "price": 30000,
+            "category": "dekorasi",
+            "image_url": "https://ecs7.tokopedia.net/img/cache/700/product-1/2017/2/27/14755523/14755523_a2f6454f-dc92-415b-9b38-0808cee6a809_800_800.png"
+        },
+        {
+            "id": 864334,
+            "name": "Keranjang Rotan",
+            "description": "Keranjang rotan dengan berbagai ukuran yang bisa dijadikan hiasan atau wadah barang di rumah.",
+            "price": 20000,
+            "category": "dekorasi",
+            "image_url": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/1/7/249764682/249764682_edde992e-60e3-4eea-944e-4cc54ae10b35_1125_1125.jpg"
+        },
+        {
+            "id": 93465363,
+            "name": "Tempat tisu",
+            "description": "Tempat tisu dari bambu yang sangat estetik.",
+            "price": 100000,
+            "category": "dekorasi",
+            "image_url": "https://th.bing.com/th/id/R.9f3210dfb54b0a68e6eefdece0c1c396?rik=sbQuMnAjr%2fEGtA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-7Ih9lYVYUYY%2fVIZBPF2HzpI%2fAAAAAAAAAbg%2fUV5rJA2nn_M%2fs1600%2fBambu-untuk-kerajinan.jpg&ehk=VZP8X65Ni7OV2CC6%2bSAFO1fueKGd2gxG6PNrPrbYyvQ%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 103434,
+            "name": "Pensil Wayang",
+            "description": "Pensil dengan hiasan wayang di atasnya berbahasn kayu.",
+            "price": 70000,
+            "category": "dekorasi",
+            "image_url": "https://assets.klikindomaret.com/products/20082226/20082226_1.jpg"
         }
     ]
 }

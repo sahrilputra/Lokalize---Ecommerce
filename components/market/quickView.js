@@ -13,7 +13,7 @@ import { FiChevronDown } from 'react-icons/fi';
 import { AiOutlineCheck } from "react-icons/ai";
 import { BiDownArrow, BiMinus, BiPlus, BiTrash } from "react-icons/bi";
 import { FiXCircle, FiInfo, FiShoppingCart } from "react-icons/fi";
-
+import { CartItem } from '../header/cartItem';
 export const QuickView = ({ open, onClose, title, image, description }) => {
 
     // ======== counting item
@@ -71,6 +71,8 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
     // === button group 
     const [isOpen, setIsOpen] = useState(false);
     const [activeButton, setActiveButton] = useState("");
+    const [sendItem, setSendItem] = ([]);
+
     useEffect(() => {
         if (activeButton !== "") {
             const timeout = setTimeout(() => setActiveButton(""), 2000);
@@ -236,6 +238,10 @@ export const QuickView = ({ open, onClose, title, image, description }) => {
                                     >
                                         <FiShoppingCart className="inline-block mr-2" />
                                         Add to Cart
+
+                                        {
+                                           visible &&  <CartItem open={visible} title={(title)}  />
+                                        }
                                     </button>
 
                                     {activeButton === "cancel" && (

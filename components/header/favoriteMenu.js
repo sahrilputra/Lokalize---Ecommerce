@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import styles from './cartmenu.module.scss'
 import { BiDownArrow, BiMinus, BiPlus, BiTrash } from "react-icons/bi";
