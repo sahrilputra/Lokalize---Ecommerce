@@ -55,7 +55,6 @@ export const Navbar = () => {
                         <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
                             <button className={styles.spanContainer}  onClick={toggleFavorite}>
                                 <BiHeart />
-                                <span className={styles.span_itemLove}>1</span>
                             </button>
                             {
                                 favShowing && <FavoriteMenu/>
@@ -63,6 +62,7 @@ export const Navbar = () => {
                         </li>
                         <li className={`${styles.nav__right__li} ${styles.icon}`} tabIndex={0}>
                             <button type='button' onClick={toggleCart}>
+                            <span className={styles.span_itemLove}>1</span>
                                 <BiShoppingBag />
                             </button>
 

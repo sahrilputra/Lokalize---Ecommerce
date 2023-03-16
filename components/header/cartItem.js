@@ -40,7 +40,6 @@ export const CartItem = ({ item, onClose, title, image}) => {
 
                 <div className={styles.cartMenu} id='menus' >
                     <h1 className='text-left'>Keranjang saya</h1>
-                    <h1> item : {title}</h1>
                     <div className={styles.grid}>
                         <div className={styles.imgContainer}>
                             <Image
@@ -56,8 +55,35 @@ export const CartItem = ({ item, onClose, title, image}) => {
                         </div>
 
                         <div className={styles.flex}>
-                            <p>Name Product</p>
-                            <p className='font-light'>Motif Kembang Rupa</p>
+                            <p>Outer Batik</p>
+                            <p className='font-light'>coklat</p>
+                            <p>Rp{harga}</p>
+                            <span className={` flex flex-row mt-3 justify-between`}>
+                                <button className='w-6 bg-slate-500 rounded-l-lg text-white' onClick={decrementCount} > <BiMinus /></button>
+                                <span className='w-9 bg-slate-300'>{count}</span>
+                                <button className='w-6  bg-slate-500 text-white rounded-r-lg' onClick={incrementCount}> <BiPlus /> </button>
+                            </span>
+                            <BiTrash className={styles.trashIcon} />
+                        </div>
+
+                    </div>
+                    <div className={styles.grid}>
+                        <div className={styles.imgContainer}>
+                            <Image
+                                src="/img_hero.png"
+                                alt="cart image"
+                                width={120}
+                                height={120}
+                            />
+                            <div className={styles.none}>
+                                <Checkbox className={styles.checkBox} />
+                            </div>
+
+                        </div>
+
+                        <div className={styles.flex}>
+                            <p>Tas Rajut</p>
+                            <p className='font-light'>Hijau</p>
                             <p>Rp{harga}</p>
                             <span className={` flex flex-row mt-3 justify-between`}>
                                 <button className='w-6 bg-slate-500 rounded-l-lg text-white' onClick={decrementCount} > <BiMinus /></button>
@@ -84,34 +110,7 @@ export const CartItem = ({ item, onClose, title, image}) => {
 
                         <div className={styles.flex}>
                             <p>Name Product</p>
-                            <p className='font-light'>Motif Kembang Rupa</p>
-                            <p>Rp{harga}</p>
-                            <span className={` flex flex-row mt-3 justify-between`}>
-                                <button className='w-6 bg-slate-500 rounded-l-lg text-white' onClick={decrementCount} > <BiMinus /></button>
-                                <span className='w-9 bg-slate-300'>{count}</span>
-                                <button className='w-6  bg-slate-500 text-white rounded-r-lg' onClick={incrementCount}> <BiPlus /> </button>
-                            </span>
-                            <BiTrash className={styles.trashIcon} />
-                        </div>
-
-                    </div>
-                    <div className={styles.grid}>
-                        <div className={styles.imgContainer}>
-                            <Image
-                                src="/img_hero.png"
-                                alt="cart image"
-                                width={120}
-                                height={120}
-                            />
-                            <div className={styles.none}>
-                                <Checkbox className={styles.checkBox} />
-                            </div>
-
-                        </div>
-
-                        <div className={styles.flex}>
-                            <p>Name Product</p>
-                            <p className='font-light'>Motif Kembang Rupa</p>
+                            <p className='font-light'>Gantungan Kunci</p>
                             <p>Rp{harga}</p>
                             <span className={` flex flex-row mt-3 justify-between`}>
                                 <button className='w-6 bg-slate-500 rounded-l-lg text-white' onClick={decrementCount} > <BiMinus /></button>

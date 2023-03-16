@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './cartmenu.module.scss'
 import { BiDownArrow, BiMinus, BiPlus, BiTrash } from "react-icons/bi";
 import { Card, Checkbox } from 'flowbite-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { PrimaryButton } from '../buttons';
+import { DataContext } from './hooksComponent';
 
 export const FavoriteMenu = ({ favoriteItem }) => {
 
@@ -14,7 +15,6 @@ export const FavoriteMenu = ({ favoriteItem }) => {
         <>
             <div className={styles.favMenu} id='menus'>
                 <h1 className='text-left'>Favorite</h1>
-
                 {favoriteItem && favoriteItem.length > 0 ?
                     (
                         favoriteItem.map((item) => {
@@ -26,7 +26,7 @@ export const FavoriteMenu = ({ favoriteItem }) => {
 
                                         </div>
                                         <div className={styles.flex}>
-                                            <p>{item.name}</p>
+                                            <p>{item.name} name</p>
                                             <p className='font-light'>{item.color}</p>
                                             <span className={` flex flex-row mt-3 justify-between`}>
                                                 <button className=' bg-slate-300 p-2 rounded-lg font-light '>Add to Cart</button>
