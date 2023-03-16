@@ -17,48 +17,19 @@ import { DataContext } from '../header/hooksComponent';
 
 export const CardComponent = () => {
 
-  // Cart Item
-  const [cartItem, setCartItem] = useState([]);
-  const handleAddToCart = (item) => {
-    setCartItem((prevSelectedItems) => [...prevSelectedItems, item]);
-  }
-
-  // liked item 
-  const [like, setLike] = useState([]);
-
-
-  const evenCartItem = () => {
-    if (setCartItem > 0) {
-      setCartItem()
-    }
-  }
-
-  // Pagination Handler 
-  const [item, setItem] = useState(data.item);
-
-
-
   // Quick View
-  const [open, setOpen] = useState(false)
-  // const [title, setTitle] = useState('')
-  const [image, setImage] = useState('')
 
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
   };
-  const handleClick = () => {
-    setOpen(true)
-  }
 
   const handleClose = () => {
     setSelectedItem(null);
   };
 
-
   // cartModal 
-
   const [cartMenodal, setCartModal] = useState(false);
   const toggleCart = () => {
     setCartModal(!cartMenodal);
@@ -69,10 +40,10 @@ export const CardComponent = () => {
   }
   // ============
 
-  const [currentPage, setCurrentPage] = useState(1);
   // const filteredItems = category === 'all' ? data.item : data.item.filter(item => item.category === category);
 
   // ================================= search and filter category
+
   const [category, setCategory] = useState('all');
   const [visible, setVisible] = useState(false);
   const [fillFavorite, setFill] = useState(false);
@@ -92,21 +63,31 @@ export const CardComponent = () => {
 
 
   // ================================== Pagination
-  const startIndex = (currentPage - 1) * 8;
-  const endIndex = startIndex + 8;
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [perPage] = useState(8);
+  const totalData = data.item.length;
+  const totalPages = Math.ceil(totalData / perPage);
+  const startIndex = (currentPage - 1) * perPage;
+  const endIndex = startIndex + perPage;
+
+  const isFirstPage = currentPage === 1;
+  const isLastPage = currentPage === totalPages;
+
   const itemsToDisplay = filteredItems.slice(startIndex, endIndex);
 
   const handlerFilter = (selectedCategory) => {
     setCategory(selectedCategory);
   }
-
-  const handlePageChange = (page) => {
-    handleCategoryChange(currentCategory, page);
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
   };
+
   const handleCategoryChange = (category, page) => {
     setCurrentCategory(category);
     setCurrentPage(page || 1);
   };
+  
   const toggleMenu = () => {
     setVisible(!visible);
     setShowing(true);
@@ -265,12 +246,18 @@ export const CardComponent = () => {
           </div>
         </div>
         <div className={styles.nextBntContainer}>
-          <Pagination
-            className={styles.pagi}
-            currentPage={1}
-            totalPages={endIndex}
-            onPageChange={handlePageChange}
-          />
+        <Pagination
+          className={styles.pagi}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+          prevBtnProps={{
+            disabled: isFirstPage,
+          }}
+          nextBtnProps={{
+            disabled: isLastPage,
+          }}
+        />
         </div>
       </div>
     </>
