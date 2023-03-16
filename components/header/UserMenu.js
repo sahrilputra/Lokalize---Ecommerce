@@ -50,17 +50,9 @@ export const UserMenu = ({ session }) => {
 
           </li>
           <li>
-            <Link href="#">
+            <Link href="/order">
               <div className={styles.flex}>
                 <BiCart className={styles.iconUserMenu} /> Order
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <div className={styles.flex}>
-                <BiWrench className={styles.iconUserMenu} />
-                Setting
               </div>
             </Link>
           </li>
