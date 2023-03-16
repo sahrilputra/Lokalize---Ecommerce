@@ -109,8 +109,8 @@ export const CartItem = ({ item, onClose, title, image}) => {
                         </div>
 
                         <div className={styles.flex}>
-                            <p>Name Product</p>
-                            <p className='font-light'>Gantungan Kunci</p>
+                            <p>Gantungan Kunci</p>
+                            <p className='font-light'>coklat</p>
                             <p>Rp{harga}</p>
                             <span className={` flex flex-row mt-3 justify-between`}>
                                 <button className='w-6 bg-slate-500 rounded-l-lg text-white' onClick={decrementCount} > <BiMinus /></button>

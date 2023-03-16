@@ -2,8 +2,19 @@
 import styles from '../styles/user.module.scss'
 import { Navbar } from '@/components/header/Navbar'
 import { InformationMenus } from '@/components/user/information';
+import { DashboardMenu } from '@/components/user/dashboard';
+import { useState } from 'react';
 import { BiHomeAlt, BiMenu, BiInfoCircle, BiReset, BiShoppingBag, BiChevronLeft } from "react-icons/bi";
+import { OrderComponent } from '@/components/user/order';
+
 const User = () => {
+
+    const [activeMenu, setActiveMenu] = useState(null);
+
+    const handleMenuClick = (menu) => {
+        setActiveMenu(menu);
+    }
+
     return (
         <>
             <div className={styles.user}>
@@ -13,20 +24,20 @@ const User = () => {
                             className={styles.user__avatar}
                         />
                         <div className={styles.user__avatarText}>
-                            <p className={styles.user__name}>Hello Sahril,</p>
+                            <p className={styles.user__name}>Hello Bestie,</p>
                             <p className={styles.user__member}>member sejak 1954</p>
                         </div>
                     </div>
                     <ul>
-                        <li><BiHomeAlt />Dashboard <BiMenu /></li>
-                        <li><BiInfoCircle />Informasi</li>
-                        <li><BiShoppingBag />Order</li>
-                        <li><BiReset />Riwayat</li>
-
+                        <li onClick={() => handleMenuClick("dashboard")}><BiHomeAlt />Dashboard <BiMenu /></li>
+                        <li onClick={() => handleMenuClick("information")}><BiInfoCircle />Informasi</li>
+                        <li onClick={() => handleMenuClick("order")}><BiShoppingBag />Order</li>
                     </ul>
                 </div>
-
-                <InformationMenus />
+                
+                {activeMenu === 'information' && <InformationMenus />}
+                {activeMenu === 'dashboard' && <DashboardMenu/>}
+                {activeMenu === 'order' && <OrderComponent/>}
             </div>
         </>
     )

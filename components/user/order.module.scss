@@ -1,0 +1,111 @@
+.dash {
+    &__back {
+        width: 42px;
+        height: 42px;
+        border: 1px solid #dedede;
+        background-color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    &__head {
+        margin-top: 20px;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 13px;
+        border-bottom: 2px solid #dedede;
+        width: 100%;
+        color: $text--dark;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.container {
+    padding: 10px;
+    margin: 4px;
+
+    &__head {
+
+        h1 {
+            color: $text--dark;
+            font-weight: 600;
+            font-size: 22px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: $grey--100;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: $text--dark;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        color: $text--dark;
+    }
+
+    &__card {
+        width: 190px;
+        height: 120px;
+        background: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: $grey--100;
+        padding: 12px;
+        margin: 4px;
+        font-size: 14px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: $text--dark;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+    }
+    &__cupon{
+        width: 50%;
+        height: 280;
+        padding: 12px;
+        margin: 9px;
+        border: 1px solid $text--dark;
+        border-radius: 22px;
+    }
+
+    &__item{
+        width: 92%;
+        margin: 10px;
+    }
+}

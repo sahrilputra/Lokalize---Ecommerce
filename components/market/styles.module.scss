@@ -113,7 +113,7 @@
     background-color: #fff;
     position: relative;
     top: -20px;
-    height: max-content;
+    height: 220px;
     padding-bottom: 12px;
     border-radius: 0 0 12px 12px;
 }
@@ -187,7 +187,8 @@
     margin: 2px;
     border-radius: 50%;
     background-color: #2d2d2d;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     cursor: pointer;
     margin:8px ;
 }
