@@ -1,5 +1,5 @@
 ## Lokalize <br> 
-this repoo for Web Design Competition on 'WDC - IFest#11' by Atmajaya <br> 
+
 Web ini didesain untuk mendukung UMKM diIndonesia yang bergerak di bidang industry souvenir dan crafting <br> 
 kami memilih untuk membangun web E-Commerce dengan tampilan yang minimalis dan juga modern, dengan mengutamakan tampilan yang nyaman dan memaksimalkan user experience terhadap produk kami.
 
